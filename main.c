@@ -6,7 +6,7 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:34:51 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/11 00:38:40 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/11 17:53:38 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,28 @@ int	check_duplicate(int *list, int num, int n)
 	return (1);
 }
 
+// int	additional_check_numb(char *number)
+// {
+// 	int	i;
+
+// 	i = 0;
+// 	if (number[0] == ' ' && number[1] == '\0')
+// 		return (0);
+// 	return (1);
+// }
+
+// int	ft_strcmp(char *s1, char *s2)
+// {
+// 	while (*s1 && *s2)
+// 	{
+// 		if (*s1 != *s2)
+// 			return (*s1 - *s2);
+// 		s1++;
+// 		s2++;
+// 	}
+// 	return (*s1 - *s2);
+// }
+
 int	correct_numb(char *number)
 {
 	size_t	i;
@@ -55,9 +77,10 @@ int	correct_numb(char *number)
 	i = 0;
 	if ((number[i] == '-' || number[i] == '+') && number[i + 1] != 0)
 		i++;
-	while (number[i] && ft_isdigit(number[i]))
+	while (number[i] && ft_isdigit(number[i]) && ((!number[i]) == '\0'))
 		i++;
-	if (ft_strlen(number) == i)
+	printf("NUMBER:%s\n", number);
+	if ((ft_strlen(number) == i) && ft_strlen(number) != 0)// && additional_check_numb(number))
 		return (printf("correct number\n"), 1);
 	else
 		return (printf("wrong number\n"), 0);
@@ -69,8 +92,8 @@ int *check_list(char **list)
 	int	lsize;
 	int	i;
 
-	if (!list)
-		return (0);
+	if (!list || list[0] == NULL)
+		return ((int *)0);
 	lsize = 0;
 	while (list[lsize])
 	{
@@ -82,7 +105,7 @@ int *check_list(char **list)
 		return (0);
 	int_list[0] = lsize; //write list size to first entry
 	i = 0;
-	while (list[i] && correct_numb(list[i]))
+	while (list[i] != NULL && correct_numb(list[i]))
 	{
 		int_list[i + 1] = ft_atoi(list[i]);
 		if (!check_duplicate(int_list, int_list[i + 1], i + 1))
@@ -103,7 +126,7 @@ int	main(int argc, char *argv[])
 	char	**list;
 	int		i;
 
-	if (argc < 2)
+	if (argc < 2 || !argv[1][0])
 		return(ft_printf("Error\n"), 0);
 
 	else if (argc == 2)

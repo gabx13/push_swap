@@ -6,7 +6,7 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 19:56:27 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/11 01:24:35 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/11 14:41:48 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,10 +86,10 @@ t_node	*stack_init(int *list)
 		add_node_back(&stack, new_node(list[++i]));
 	}
 	free(list);
-	add_node_front(&stack, new_node(-123123));
-	// rotate(&stack);
-	rev_rotate(&stack);
-	swap(&stack);
+	// add_node_front(&stack, new_node(-123123));
+	// // rotate(&stack);
+	// rev_rotate(&stack);
+	// swap(&stack);
 	tmp = stack;	//test
 	while (tmp->next != NULL)
 	{
