@@ -6,7 +6,7 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:34:51 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/11 17:53:38 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/12 15:21:39 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	free_list(char **list)
 	{
 		// if (list[i] == NULL)
 		// 	break ;
-		printf("--------free list NR:%i\n", i);
+		// printf("--------free list NR:%i\n", i);
 		free(list[i]);
 		list[i] = NULL;
 		i++;
@@ -35,9 +35,15 @@ void	free_list(char **list)
 int	check_duplicate(int *list, int num, int n)
 {
 	if (!list)
-		return (printf("!list or !num"), 0);
+	{
+		// ft_printf("!list or !num");
+		return (0);
+	}
 	if (n == 1)
-		return(printf("only one or first arg\n"), 1);
+	{
+		// ft_printf("only one or first arg\n");
+		return(1);
+	}
 	while (1 < n)
 	{
 		if (list[--n] == num)
@@ -79,18 +85,27 @@ int	correct_numb(char *number)
 		i++;
 	while (number[i] && ft_isdigit(number[i]) && ((!number[i]) == '\0'))
 		i++;
-	printf("NUMBER:%s\n", number);
+	// printf("NUMBER:%s\n", number);
 	if ((ft_strlen(number) == i) && ft_strlen(number) != 0)// && additional_check_numb(number))
-		return (printf("correct number\n"), 1);
+	{
+		// printf("correct number\n");
+		return (1);
+	}
 	else
-		return (printf("wrong number\n"), 0);
+	{
+		// printf("wrong number\n");
+		return (0);
+	}
 }
+
+
 
 int *check_list(char **list)
 {
-	int	*int_list;
-	int	lsize;
-	int	i;
+	int		*int_list;
+	int		lsize;
+	int		i;
+	long	ch_nmb;
 
 	if (!list || list[0] == NULL)
 		return ((int *)0);
@@ -99,7 +114,7 @@ int *check_list(char **list)
 	{
 		lsize++;
 	}
-	printf("list size to be created: %i\n", lsize);
+	// printf("list size to be created: %i\n", lsize);
 	int_list = malloc((lsize + 1) * sizeof(int));
 	if (!int_list)
 		return (0);
@@ -107,15 +122,28 @@ int *check_list(char **list)
 	i = 0;
 	while (list[i] != NULL && correct_numb(list[i]))
 	{
-		int_list[i + 1] = ft_atoi(list[i]);
+		ch_nmb = ft_atol(list[i]);
+		if (ch_nmb > INT_MAX || ch_nmb < INT_MIN)
+		{
+			// ft_printf("MIN/MAX number exceeded\n");
+			return ((int *)0);
+		}
+		int_list[i + 1] = (int)ch_nmb;
+		// int_list[i + 1] = ft_atoi(list[i]);
 		if (!check_duplicate(int_list, int_list[i + 1], i + 1))
-			return (ft_printf("Duplicate found\n"), free(int_list), free_list(list), (int *)0);
+		{
+			// ft_printf("Duplicate found\n");
+			return (free(int_list), free_list(list), (int *)0);
+		}
 		i++;
-		ft_printf("added to list %i on %i position\n", int_list[i], i);
+		// ft_printf("added to list %i on %i position\n", int_list[i], i);
 	}
 	if (lsize != i)
-		return(ft_printf("Error in list\n"), free(int_list), free_list(list), (int *)0);
-	printf("check list: %i\n", i);
+	{
+		// ft_printf("Error in list\n");
+		return(free(int_list), free_list(list), (int *)0);
+	}
+	// printf("check list: %i\n", i);
 
 	return(int_list);
 }
@@ -141,7 +169,7 @@ int	main(int argc, char *argv[])
 		i = 0;
 		while (i < argc - 1)
 		{
-			printf("len argv:%lu\n", strlen(argv[i + 1]));
+			// printf("len argv:%lu\n", strlen(argv[i + 1]));
 			list[i] = ft_strdup_ps(argv[i + 1], ft_strlen(argv[i + 1]));
 			i++;
 		}
@@ -149,8 +177,11 @@ int	main(int argc, char *argv[])
 	}
 
 	if (!(stack = stack_init(check_list(list))))
-		return(printf("Exit error\n"), 13);
+		return(printf("Error\n"), 0);
 	free_list(list);
-	free_stack(stack);
+	sort3(&stack);
+	// print_stack(stack);
+	if (stack != NULL)
+		free_stack(stack);
 	return (0);
 }

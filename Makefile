@@ -6,7 +6,7 @@
 #    By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/03 17:28:00 by vgabovs           #+#    #+#              #
-#    Updated: 2023/10/09 21:25:41 by vgabovs          ###   ########.fr        #
+#    Updated: 2023/10/11 18:49:33 by vgabovs          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,7 +69,7 @@ $(LIBFTA):
 val: USE_SANITIZER = 0
 val: fclean $(LIBFTA) $(SRCS) $(OBJS)
 	@$(CC) $(OBJS) $(LIBFTA) -o $(NAME)
-	@$(VALG) ./$(NAME) $(ARGS) -s
+	@$(VALG) ./$(NAME) $(ARGS)
 	@echo $(GREEN)"- Compiled with valgrind-"$(NONE)
 
 at: USE_SANITIZER = 0
