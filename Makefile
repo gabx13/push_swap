@@ -6,7 +6,7 @@
 #    By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/03 17:28:00 by vgabovs           #+#    #+#              #
-#    Updated: 2023/10/11 18:49:33 by vgabovs          ###   ########.fr        #
+#    Updated: 2023/10/17 23:51:09 by vgabovs          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,19 +18,23 @@ SRC_DIR = src
 
 OBJ_DIR = obj
 
+INC_DIR = inc
+
 OBJS = $(SRCS:%.c=$(OBJ_DIR)/%.o)
 
 CC = cc
 
-CCS = cc -fsanitize=address -g
+CCS = $(CC) -g -fsanitize=address -fno-omit-frame-pointer
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -I$(INC_DIR)
 
 LIBFTDIR = ./inc/libft
 
 LIBFTA = $(LIBFTDIR)/libftprintf.a
 
-VALG = valgrind --leak-check=full
+PUSH_SWAP_INC = inc/push_swap.h
+
+VALG = valgrind --leak-check=full --show-leak-kinds=all
 
 AT = leaks -atExit --
 
@@ -58,7 +62,7 @@ $(NAME): $(LIBFTA) $(SRCS) $(OBJS)
 	@$(CCFLAGS) $(OBJS) $(LIBFTA) -o $@
 	@echo $(GREEN)"- Compiled -"$(NONE)
 
-$(OBJ_DIR)/%.o:%.c $(LIBFTA)
+$(OBJ_DIR)/%.o:%.c $(PUSH_SWAP_INC) $(LIBFTA)
 	@echo $(CURSIVE)$(GRAY) "     - Building $<" $(NONE)
 	@mkdir -p $(dir $@)
 	@if [ "$(USE_SANITIZER)" = "1" ]; then $(CCS) $(CFLAGS) -c $< -o $@ ; else $(CC) $(CFLAGS) -c $< -o $@ ; fi
@@ -81,6 +85,7 @@ at: fclean $(LIBFTA) $(SRCS) $(OBJS)
 h:
 	@echo '------ make at ARGS=" "  ------'
 	@echo '------ make val ARGS=" " ------'
+	@echo '------ make test3 5 100 500 ------'
 
 clean:
 	@$(RM) $(OBJS) $(OBJ_DIR)
@@ -93,6 +98,41 @@ fclean: clean
 	@echo $(CURSIVE)$(GRAY) "     - $(NAME) removed" $(NONE)
 
 re: fclean all
+
+test: $(NAME)
+	$(eval ARG = $(shell jot -r 30 -1000 40000))
+	@./push_swap $(ARG)
+	@echo $(WARNING)"Instructions: "$(NONE)
+	@./push_swap $(ARG) | wc -l
+
+test3: $(NAME)
+	$(eval ARG = $(shell jot -r 3 -1000 40000))
+	@./push_swap $(ARG) | ./checker_Mac $(ARG)
+	@echo $(WARNING)"Instructions: "$(NONE)
+	@./push_swap $(ARG) | wc -l
+
+test5: $(NAME)
+	$(eval ARG = $(shell jot -r 5 -10000 40000))
+	@./push_swap $(ARG) | ./checker_Mac $(ARG)
+	@echo "Instructions: "; ./push_swap $(ARG) | wc -l
+# @./push_swap $(ARG) | wc -l
+
+test20: $(NAME)
+	$(eval ARG = $(shell jot -r 21 -10000 40000))
+	@./push_swap $(ARG) | ./checker_Mac $(ARG)
+	@echo "Instructions: "; ./push_swap $(ARG) | wc -l
+
+test100: $(NAME)
+	$(eval ARG = $(shell jot -r 100 -1000000 1000000))
+	@./push_swap $(ARG) | ./checker_Mac $(ARG)
+	@echo "Instructions: "
+	@./push_swap $(ARG) | wc -l
+
+test500: $(NAME)
+	$(eval ARG = $(shell jot -r 500 -1000000 4000000))
+	@./push_swap $(ARG) | ./checker_Mac $(ARG)
+	@echo -n "Instructions: "
+	@./push_swap $(ARG) | wc -l
 
 #####################################
 

@@ -6,33 +6,20 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 17:22:12 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/11 23:59:26 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/16 11:56:27 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/push_swap.h"
+#include "push_swap.h"
+// #include "../inc/push_swap.h"
 
-// t_node	*make_node(int num)
-// {
-// 	t_node	*new_node;
 
-// 	new_node = (t_node *)malloc(sizeof(t_node));
-// 	if (!new_node)
-// 		return (NULL);
-// 	new_node->data = num;
-// 	new_node->next = NULL;
-// 	return (new_node);
-// }
-
-// size_t	ft_strlen_ps(const char *s)
-// {
-// 	size_t	n;
-
-// 	n = 0;
-// 	while (s[n] != '\0')
-// 		n++;
-// 	return (n);
-// }
+int	ft_abs(int nb)
+{
+	if (nb < 0)
+		return (nb * -1);
+	return (nb);
+}
 
 char	*ft_strdup_ps(const char *s1, int i)
 {

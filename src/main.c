@@ -6,11 +6,12 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:34:51 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/12 15:21:39 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/18 00:12:06 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "inc/push_swap.h"
+#include "push_swap.h"
+// #include "inc/push_swap.h"
 
 void	free_list(char **list)
 {
@@ -127,6 +128,7 @@ int *check_list(char **list)
 		{
 			// ft_printf("MIN/MAX number exceeded\n");
 			return ((int *)0);
+			// error(*list);
 		}
 		int_list[i + 1] = (int)ch_nmb;
 		// int_list[i + 1] = ft_atoi(list[i]);
@@ -148,16 +150,12 @@ int *check_list(char **list)
 	return(int_list);
 }
 
-int	main(int argc, char *argv[])
+char	**parser(int argc, char **argv)
 {
-	t_node	*stack;
 	char	**list;
 	int		i;
 
-	if (argc < 2 || !argv[1][0])
-		return(ft_printf("Error\n"), 0);
-
-	else if (argc == 2)
+	if (argc == 2)
 	{
 		list = ft_split(argv[1], ' ');
 	}
@@ -165,7 +163,7 @@ int	main(int argc, char *argv[])
 	{
 		list = (char **)malloc((argc + 1) * sizeof(char *));
 		if (list == NULL)
-			return (11);
+			return (NULL);
 		i = 0;
 		while (i < argc - 1)
 		{
@@ -175,13 +173,76 @@ int	main(int argc, char *argv[])
 		}
 		list[i] = NULL;
 	}
+	return (list);
+}
 
-	if (!(stack = stack_init(check_list(list))))
+void printer(t_node *stack_a, t_node *stack_b, char* ba)
+{
+	if (stack_a == NULL || stack_b == NULL)
+	{
+		FILE *log = fopen("log.txt", "w");		//write in log
+		fprintf(log, "");						//write in log
+		fclose(log);							//write in log
+		return ;
+	}
+	FILE *log = fopen("log.txt", "a");		//write in log
+	// print_stack(stack_a, log);				//write in log
+	// sort3(&stack_a);
+	fprintf(log, "\t%s\nA:\n", ba);					//write in log
+	print_stack(stack_a, log, 'A');				//write in log
+	fprintf(log, "\nB:\n");					//write in log
+	print_stack(stack_b, log, 'B');				//write in log
+	fprintf(log, "\n\n");					//write in log
+	fclose(log);							//write in log
+}
+
+int	main(int argc, char *argv[])
+{
+	t_node	*stack_a;
+	t_node	*stack_b;
+	char	**list;
+
+	if (argc < 2 || !argv[1][0])
+		return(ft_printf("Error\n"), 0);
+	else
+	{
+		if (!(list = parser(argc, argv)))
+			return (1);
+	}
+
+	if (!(stack_a = stack_init(check_list(list))))
 		return(printf("Error\n"), 0);
+	stack_b = NULL;
+	assign_index(&stack_a, stack_len(stack_a));
+	push_up_three(&stack_a, &stack_b, stack_len(stack_a), 0);
+
+	sort3(&stack_a);
+	// int ss = 4;
+	printer(NULL, NULL, 0);
+	printer(stack_a, stack_b, "start");
+	while (stack_b->next->next)
+	{
+		calc_position(&stack_b);
+		calc_position(&stack_a);
+		printer(stack_a, stack_b, "before move");
+		get_price(&stack_a, &stack_b);
+		make_move(&stack_a, &stack_b);
+		printer(stack_a, stack_b, "after move");
+	}
+
+	// int sa = 0;
+	// int sb = 0;
+	// printf("index to use first:a%d, b%d\n", find_index_w_lowest_price(stack_a, &sa), find_index_w_lowest_price(stack_b, &sb));
+	// printf("sa:%d, sb:%d\n", sa, sb);
+	// printf("position of next move:%d\n", get_next_move(stack_a, stack_b));
+
+
+
+	// printf("\nLAST NODE IDX:%d\n", last_node_idx(stack_b));
 	free_list(list);
-	sort3(&stack);
-	// print_stack(stack);
-	if (stack != NULL)
-		free_stack(stack);
+	if (stack_a != NULL)
+		free_stack(stack_a);
+	if (stack_b != NULL)
+		free_stack(stack_b);
 	return (0);
 }

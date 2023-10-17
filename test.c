@@ -91,6 +91,7 @@ int main(int argc, char **argv)
 {
 	int i = 0;
 
+	exit(EXIT_SUCCESS);
 	if (argc == 2)
 	{
 		while(argv[1][i])
@@ -108,4 +109,4 @@ int main(int argc, char **argv)
 		}
 	}
 	write (1,"\n",1);
-}		
+}
