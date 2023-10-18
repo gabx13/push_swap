@@ -6,7 +6,7 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:36:31 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/17 23:40:41 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/18 15:55:23 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ typedef struct s_node
 	int				index;
 	int				to_top;
 	int				price;
+	int				target_pos;
 	struct s_node	*next;
 }					t_node;
 
@@ -64,9 +65,23 @@ void		a_ction2(char *command, t_node **stack_a, t_node **stack_b);
 void		a_ction3(char *command, t_node **stack_a, t_node **stack_b);
 void		a_ction4(char *command, t_node **stack_a, t_node **stack_b);
 
+int *check_list(char **list);
+void	free_list(char **list);
+
 void	get_price(t_node **stack_a, t_node **stack_b);
 int	find_index_w_lowest_price(t_node *stack, int *move_to_top);
 int	get_next_move(t_node *stack_a, t_node *stack_b, int *to_top);
-void	make_move(t_node **stack_a, t_node **stack_b);
+// void	make_move(t_node **stack_a, t_node **stack_b);
 
+void	make_move(t_node **stack_a, t_node **stack_b, int cost_a, int cost_b);
+void	check_make_move(t_node **stack_a, t_node **stack_b);
+void	rotate_b(t_node **stack, int *cost);
+void	rotate_a(t_node **stack, int *cost);
+void	rrr_move(t_node **stack_a, t_node **stack_b, int *cost_a, int *cost_b);
+void	rr_move(t_node **stack_a, t_node **stack_b, int *cost_a, int *cost_b);
+
+void printer(t_node *stack_a, t_node *stack_b, char* ba);
+
+void	get_target_position(t_node **stack_a, t_node **stack_b);
+int	get_target(t_node **stack_a, int b_idx, int target_idx, int target_pos);
 #endif

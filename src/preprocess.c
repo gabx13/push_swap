@@ -6,7 +6,7 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 17:36:35 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/17 21:19:39 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/18 12:53:39 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,20 +50,4 @@ void	push_up_three(t_node **stack_a, t_node **stack_b, int ssize, int trigger)
 		{
 			action("pb", stack_a, stack_b);
 		}
-}
-
-int	max_index(t_node *stack)
-{
-	t_node	*tmp;
-	int	max_index;
-
-	tmp = stack;
-	max_index = INT_MIN;
-	while(tmp)
-	{
-		if (tmp->index > max_index)
-			max_index = tmp->index;
-		tmp = tmp->next;
-	}
-	return (max_index);
 }

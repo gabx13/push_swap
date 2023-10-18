@@ -6,7 +6,7 @@
 #    By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/03 17:28:00 by vgabovs           #+#    #+#              #
-#    Updated: 2023/10/17 23:51:09 by vgabovs          ###   ########.fr        #
+#    Updated: 2023/10/19 01:14:26 by vgabovs          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,9 @@ OBJS = $(SRCS:%.c=$(OBJ_DIR)/%.o)
 
 CC = cc
 
-CCS = $(CC) -g -fsanitize=address -fno-omit-frame-pointer
+CCS = $(CC) -g -fsanitize=address
+
+#-fsanitize=address
 
 CFLAGS = -Wall -Wextra -Werror -I$(INC_DIR)
 
@@ -100,7 +102,7 @@ fclean: clean
 re: fclean all
 
 test: $(NAME)
-	$(eval ARG = $(shell jot -r 30 -1000 40000))
+	$(eval ARG = $(shell jot -r 20 -1000 40000))
 	@./push_swap $(ARG)
 	@echo $(WARNING)"Instructions: "$(NONE)
 	@./push_swap $(ARG) | wc -l

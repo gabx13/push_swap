@@ -6,68 +6,12 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 23:15:42 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/16 13:18:40 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/18 12:54:33 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 // #include "../inc/push_swap.h"
-
-int	is_sorted(t_node *stack)
-{
-	t_node	*head;
-
-	head = stack;
-	while (head->next != NULL)
-	{
-		if (head->data > head->next->data)
-		{
-			// printf("| NOT sorted |\n");
-			return (0);
-		}
-		head = head->next;
-	}
-	// printf("| sorted |\n");
-	return (1);
-}
-
-void	min_max(t_node *stack, int *min, int *max)
-{
-	t_node	*head;
-
-	head = stack;
-	*min = stack->data;
-	*max = stack->data;
-	while (head->next != NULL)
-	{
-		if (head->data > *max)
-			*max = head->data;
-		if (head->data < *min)
-			*min = head->data;
-		head = head->next;
-	}
-	if (head->data > *max)
-		*max = head->data;
-	if (head->data < *min)
-		*min = head->data;
-}
-
-int	stack_len(t_node *stack)
-{
-	t_node	*head;
-	int		i;
-
-	if (stack == NULL)
-		return (0);
-	i = 0;
-	head = stack;
-	while (head!= NULL)
-	{
-		head = head->next;
-		++i;
-	}
-	return (i);
-}
 
 void	sort3(t_node **stack)
 {

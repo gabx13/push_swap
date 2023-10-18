@@ -6,36 +6,12 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 19:56:27 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/17 23:42:37 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/18 15:44:00 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 // #include "../inc/push_swap.h"
-
-int	last_node_idx(t_node *stack)
-{
-	t_node	*tmp;
-
-	tmp = stack;
-	while (tmp->next != NULL)
-		tmp = tmp->next;
-	return (tmp->index);
-}
-
-void	free_stack(t_node *stack)
-{
-	t_node	*tmp;
-
-	while (stack->next != NULL)
-	{
-		tmp = stack->next;
-		free(stack);
-		stack = tmp;
-	}
-	free(stack);
-	stack = NULL;
-}
 
 t_node	*new_node(int data)
 {
@@ -48,8 +24,8 @@ t_node	*new_node(int data)
 	node->to_top = 0;
 	node->index = 0;
 	node->price = 0;
-	// node->price_b = 0;
 	node->pos = 0;
+	node->target_pos = 0;
 	node->next = NULL;
 	return (node);
 }
@@ -84,24 +60,6 @@ void	add_node_front(t_node **stack, t_node *node)
 	(*stack) = node;
 }
 
-void	print_stack(t_node *stack, FILE *o, char s)
-{
-	t_node	*tmp;
-
-	// if (!stack)
-	// 	return ;
-	tmp = stack;
-	if (tmp)
-	{
-		while (tmp->next != NULL )
-		{
-			fprintf(o, "	stack %c:%i,	index:%d,	to top:%d,	price:%d, pos:%d\n",s, tmp->data, tmp->index, tmp->to_top, tmp->price, tmp->pos);
-			tmp = tmp->next;
-		}
-		fprintf(o, "	stack %c:%i,	index:%d,	to top:%d,	price:%d, pos:%d\n",s, tmp->data, tmp->index, tmp->to_top, tmp->price, tmp->pos);
-	}
-}
-
 t_node	*stack_init(int *list)
 {
 	int		list_len;
@@ -120,36 +78,6 @@ t_node	*stack_init(int *list)
 		add_node_back(&stack, new_node(list[++i]));
 	}
 	free(list);
-/////////////////////////
-	// t_node	*stack_b;
-
-	// stack_b = NULL;
-	// sort3(&stack);
-
-	// print_stack(stack);
-	// // tmp = stack;	//test
-	// // if (tmp)
-	// // {
-	// // 	while (tmp->next != NULL )
-	// // 	{
-	// // 		printf("stack A:%i\n", tmp->data);
-	// // 		tmp = tmp->next;
-	// // 	}
-	// // 	printf("stack A:%i\n", tmp->data);
-	// // 	free_stack(tmp);
-	// // }
-	// print_stack(stack_b);
-	// // tmp = stack_b;
-	// // if (tmp)
-	// // {
-	// // 	while (stack_b->next != NULL)
-	// // 		{
-	// // 			printf("stack B:%i\n", stack_b->data);
-	// // 			stack_b = stack_b->next;
-	// // 		}
-	// 		printf("stack B:%i\n", stack_b->data);
-	// 		free_stack(tmp);
-	// }
 	return (stack);
 }
 

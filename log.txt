@@ -1,1836 +1,494 @@
-	start
-A:
-	stack A:36194,	index:26,	to top:0,	price:0, pos:0
-	stack A:39428,	index:28,	to top:0,	price:0, pos:0
-	stack A:39463,	index:29,	to top:0,	price:0, pos:0
-
-B:
-	stack B:36431,	index:27,	to top:0,	price:0, pos:0
-	stack B:33194,	index:25,	to top:0,	price:0, pos:0
-	stack B:32117,	index:24,	to top:0,	price:0, pos:0
-	stack B:31034,	index:23,	to top:0,	price:0, pos:0
-	stack B:27403,	index:20,	to top:0,	price:0, pos:0
-	stack B:28151,	index:21,	to top:0,	price:0, pos:0
-	stack B:24990,	index:17,	to top:0,	price:0, pos:0
-	stack B:26922,	index:19,	to top:0,	price:0, pos:0
-	stack B:22874,	index:16,	to top:0,	price:0, pos:0
-	stack B:22408,	index:15,	to top:0,	price:0, pos:0
-	stack B:21932,	index:14,	to top:0,	price:0, pos:0
-	stack B:14631,	index:10,	to top:0,	price:0, pos:0
-	stack B:14221,	index:9,	to top:0,	price:0, pos:0
-	stack B:11411,	index:8,	to top:0,	price:0, pos:0
-	stack B:16890,	index:12,	to top:0,	price:0, pos:0
-	stack B:2841,	index:2,	to top:0,	price:0, pos:0
-	stack B:8020,	index:5,	to top:0,	price:0, pos:0
-	stack B:3797,	index:3,	to top:0,	price:0, pos:0
-	stack B:10968,	index:7,	to top:0,	price:0, pos:0
-	stack B:10013,	index:6,	to top:0,	price:0, pos:0
-	stack B:-358,	index:1,	to top:0,	price:0, pos:0
-	stack B:5175,	index:4,	to top:0,	price:0, pos:0
-	stack B:-909,	index:0,	to top:0,	price:0, pos:0
-	stack B:14927,	index:11,	to top:0,	price:0, pos:0
-	stack B:17125,	index:13,	to top:0,	price:0, pos:0
-	stack B:25635,	index:18,	to top:0,	price:0, pos:0
-	stack B:30542,	index:22,	to top:0,	price:0, pos:0
-
-
 	before move
 A:
-	stack A:36194,	index:26,	to top:0,	price:0, pos:0
-	stack A:39428,	index:28,	to top:1,	price:0, pos:1
-	stack A:39463,	index:29,	to top:-1,	price:0, pos:2
+	stack A:37778,	index:16,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:38084,	index:17,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:39097,	index:18,	to top:-1,	price:0, pos:2, target_pos:0
 
 B:
-	stack B:36431,	index:27,	to top:0,	price:0, pos:0
-	stack B:33194,	index:25,	to top:1,	price:0, pos:1
-	stack B:32117,	index:24,	to top:2,	price:0, pos:2
-	stack B:31034,	index:23,	to top:3,	price:0, pos:3
-	stack B:27403,	index:20,	to top:4,	price:0, pos:4
-	stack B:28151,	index:21,	to top:5,	price:0, pos:5
-	stack B:24990,	index:17,	to top:6,	price:0, pos:6
-	stack B:26922,	index:19,	to top:7,	price:0, pos:7
-	stack B:22874,	index:16,	to top:8,	price:0, pos:8
-	stack B:22408,	index:15,	to top:9,	price:0, pos:9
-	stack B:21932,	index:14,	to top:10,	price:0, pos:10
-	stack B:14631,	index:10,	to top:11,	price:0, pos:11
-	stack B:14221,	index:9,	to top:12,	price:0, pos:12
-	stack B:11411,	index:8,	to top:13,	price:0, pos:13
-	stack B:16890,	index:12,	to top:-13,	price:0, pos:14
-	stack B:2841,	index:2,	to top:-12,	price:0, pos:15
-	stack B:8020,	index:5,	to top:-11,	price:0, pos:16
-	stack B:3797,	index:3,	to top:-10,	price:0, pos:17
-	stack B:10968,	index:7,	to top:-9,	price:0, pos:18
-	stack B:10013,	index:6,	to top:-8,	price:0, pos:19
-	stack B:-358,	index:1,	to top:-7,	price:0, pos:20
-	stack B:5175,	index:4,	to top:-6,	price:0, pos:21
-	stack B:-909,	index:0,	to top:-5,	price:0, pos:22
-	stack B:14927,	index:11,	to top:-4,	price:0, pos:23
-	stack B:17125,	index:13,	to top:-3,	price:0, pos:24
-	stack B:25635,	index:18,	to top:-2,	price:0, pos:25
-	stack B:30542,	index:22,	to top:-1,	price:0, pos:26
+	stack B:39565,	index:19,	to top:0,	price:0, pos:0, target_pos:0
+	stack B:34768,	index:15,	to top:1,	price:1, pos:1, target_pos:0
+	stack B:34703,	index:14,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:33863,	index:13,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:30478,	index:11,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:27840,	index:10,	to top:5,	price:5, pos:5, target_pos:0
+	stack B:27601,	index:9,	to top:6,	price:6, pos:6, target_pos:0
+	stack B:19898,	index:7,	to top:7,	price:7, pos:7, target_pos:0
+	stack B:17184,	index:6,	to top:8,	price:8, pos:8, target_pos:0
+	stack B:22589,	index:8,	to top:-8,	price:8, pos:9, target_pos:0
+	stack B:14539,	index:4,	to top:-7,	price:7, pos:10, target_pos:0
+	stack B:3646,	index:0,	to top:-6,	price:6, pos:11, target_pos:0
+	stack B:12142,	index:2,	to top:-5,	price:5, pos:12, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:13, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:14, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:15, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:1, pos:16, target_pos:0
 
 
 	after move
 A:
-	stack A:36431,	index:27,	to top:0,	price:2, pos:0
-	stack A:39428,	index:28,	to top:1,	price:2, pos:1
-	stack A:39463,	index:29,	to top:-1,	price:2, pos:2
-	stack A:36194,	index:26,	to top:0,	price:2, pos:0
+	stack A:39565,	index:19,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:37778,	index:16,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:38084,	index:17,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:39097,	index:18,	to top:-1,	price:0, pos:2, target_pos:0
 
 B:
-	stack B:33194,	index:25,	to top:1,	price:2, pos:1
-	stack B:32117,	index:24,	to top:2,	price:3, pos:2
-	stack B:31034,	index:23,	to top:3,	price:4, pos:3
-	stack B:27403,	index:20,	to top:4,	price:5, pos:4
-	stack B:28151,	index:21,	to top:5,	price:6, pos:5
-	stack B:24990,	index:17,	to top:6,	price:7, pos:6
-	stack B:26922,	index:19,	to top:7,	price:8, pos:7
-	stack B:22874,	index:16,	to top:8,	price:9, pos:8
-	stack B:22408,	index:15,	to top:9,	price:10, pos:9
-	stack B:21932,	index:14,	to top:10,	price:11, pos:10
-	stack B:14631,	index:10,	to top:11,	price:12, pos:11
-	stack B:14221,	index:9,	to top:12,	price:13, pos:12
-	stack B:11411,	index:8,	to top:13,	price:14, pos:13
-	stack B:16890,	index:12,	to top:-13,	price:14, pos:14
-	stack B:2841,	index:2,	to top:-12,	price:13, pos:15
-	stack B:8020,	index:5,	to top:-11,	price:12, pos:16
-	stack B:3797,	index:3,	to top:-10,	price:11, pos:17
-	stack B:10968,	index:7,	to top:-9,	price:10, pos:18
-	stack B:10013,	index:6,	to top:-8,	price:9, pos:19
-	stack B:-358,	index:1,	to top:-7,	price:8, pos:20
-	stack B:5175,	index:4,	to top:-6,	price:7, pos:21
-	stack B:-909,	index:0,	to top:-5,	price:6, pos:22
-	stack B:14927,	index:11,	to top:-4,	price:5, pos:23
-	stack B:17125,	index:13,	to top:-3,	price:4, pos:24
-	stack B:25635,	index:18,	to top:-2,	price:3, pos:25
-	stack B:30542,	index:22,	to top:-1,	price:2, pos:26
+	stack B:34768,	index:15,	to top:1,	price:1, pos:1, target_pos:0
+	stack B:34703,	index:14,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:33863,	index:13,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:30478,	index:11,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:27840,	index:10,	to top:5,	price:5, pos:5, target_pos:0
+	stack B:27601,	index:9,	to top:6,	price:6, pos:6, target_pos:0
+	stack B:19898,	index:7,	to top:7,	price:7, pos:7, target_pos:0
+	stack B:17184,	index:6,	to top:8,	price:8, pos:8, target_pos:0
+	stack B:22589,	index:8,	to top:-8,	price:8, pos:9, target_pos:0
+	stack B:14539,	index:4,	to top:-7,	price:7, pos:10, target_pos:0
+	stack B:3646,	index:0,	to top:-6,	price:6, pos:11, target_pos:0
+	stack B:12142,	index:2,	to top:-5,	price:5, pos:12, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:13, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:14, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:15, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:1, pos:16, target_pos:0
 
 
 	before move
 A:
-	stack A:36431,	index:27,	to top:0,	price:2, pos:0
-	stack A:39428,	index:28,	to top:1,	price:2, pos:1
-	stack A:39463,	index:29,	to top:2,	price:2, pos:2
-	stack A:36194,	index:26,	to top:-1,	price:2, pos:3
+	stack A:39565,	index:19,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:37778,	index:16,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:38084,	index:17,	to top:2,	price:0, pos:2, target_pos:0
+	stack A:39097,	index:18,	to top:-1,	price:0, pos:3, target_pos:0
 
 B:
-	stack B:33194,	index:25,	to top:0,	price:2, pos:0
-	stack B:32117,	index:24,	to top:1,	price:3, pos:1
-	stack B:31034,	index:23,	to top:2,	price:4, pos:2
-	stack B:27403,	index:20,	to top:3,	price:5, pos:3
-	stack B:28151,	index:21,	to top:4,	price:6, pos:4
-	stack B:24990,	index:17,	to top:5,	price:7, pos:5
-	stack B:26922,	index:19,	to top:6,	price:8, pos:6
-	stack B:22874,	index:16,	to top:7,	price:9, pos:7
-	stack B:22408,	index:15,	to top:8,	price:10, pos:8
-	stack B:21932,	index:14,	to top:9,	price:11, pos:9
-	stack B:14631,	index:10,	to top:10,	price:12, pos:10
-	stack B:14221,	index:9,	to top:11,	price:13, pos:11
-	stack B:11411,	index:8,	to top:12,	price:14, pos:12
-	stack B:16890,	index:12,	to top:13,	price:14, pos:13
-	stack B:2841,	index:2,	to top:-12,	price:13, pos:14
-	stack B:8020,	index:5,	to top:-11,	price:12, pos:15
-	stack B:3797,	index:3,	to top:-10,	price:11, pos:16
-	stack B:10968,	index:7,	to top:-9,	price:10, pos:17
-	stack B:10013,	index:6,	to top:-8,	price:9, pos:18
-	stack B:-358,	index:1,	to top:-7,	price:8, pos:19
-	stack B:5175,	index:4,	to top:-6,	price:7, pos:20
-	stack B:-909,	index:0,	to top:-5,	price:6, pos:21
-	stack B:14927,	index:11,	to top:-4,	price:5, pos:22
-	stack B:17125,	index:13,	to top:-3,	price:4, pos:23
-	stack B:25635,	index:18,	to top:-2,	price:3, pos:24
-	stack B:30542,	index:22,	to top:-1,	price:2, pos:25
+	stack B:34768,	index:15,	to top:0,	price:1, pos:0, target_pos:1
+	stack B:34703,	index:14,	to top:1,	price:2, pos:1, target_pos:1
+	stack B:33863,	index:13,	to top:2,	price:3, pos:2, target_pos:1
+	stack B:30478,	index:11,	to top:3,	price:4, pos:3, target_pos:1
+	stack B:27840,	index:10,	to top:4,	price:5, pos:4, target_pos:1
+	stack B:27601,	index:9,	to top:5,	price:6, pos:5, target_pos:1
+	stack B:19898,	index:7,	to top:6,	price:7, pos:6, target_pos:1
+	stack B:17184,	index:6,	to top:7,	price:8, pos:7, target_pos:1
+	stack B:22589,	index:8,	to top:8,	price:9, pos:8, target_pos:1
+	stack B:14539,	index:4,	to top:-7,	price:8, pos:9, target_pos:1
+	stack B:3646,	index:0,	to top:-6,	price:7, pos:10, target_pos:1
+	stack B:12142,	index:2,	to top:-5,	price:6, pos:11, target_pos:1
+	stack B:6966,	index:1,	to top:-4,	price:5, pos:12, target_pos:1
+	stack B:12354,	index:3,	to top:-3,	price:4, pos:13, target_pos:1
+	stack B:14576,	index:5,	to top:-2,	price:3, pos:14, target_pos:1
+	stack B:31736,	index:12,	to top:-1,	price:2, pos:15, target_pos:1
 
 
 	after move
 A:
-	stack A:33194,	index:25,	to top:0,	price:1, pos:0
-	stack A:36431,	index:27,	to top:0,	price:1, pos:0
-	stack A:39428,	index:28,	to top:1,	price:2, pos:1
-	stack A:39463,	index:29,	to top:2,	price:2, pos:2
-	stack A:36194,	index:26,	to top:-1,	price:2, pos:3
+	stack A:34768,	index:15,	to top:0,	price:1, pos:0, target_pos:1
+	stack A:37778,	index:16,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:38084,	index:17,	to top:2,	price:0, pos:2, target_pos:0
+	stack A:39097,	index:18,	to top:-1,	price:0, pos:3, target_pos:0
+	stack A:39565,	index:19,	to top:0,	price:0, pos:0, target_pos:0
 
 B:
-	stack B:32117,	index:24,	to top:1,	price:2, pos:1
-	stack B:31034,	index:23,	to top:2,	price:3, pos:2
-	stack B:27403,	index:20,	to top:3,	price:4, pos:3
-	stack B:28151,	index:21,	to top:4,	price:5, pos:4
-	stack B:24990,	index:17,	to top:5,	price:6, pos:5
-	stack B:26922,	index:19,	to top:6,	price:7, pos:6
-	stack B:22874,	index:16,	to top:7,	price:8, pos:7
-	stack B:22408,	index:15,	to top:8,	price:9, pos:8
-	stack B:21932,	index:14,	to top:9,	price:10, pos:9
-	stack B:14631,	index:10,	to top:10,	price:11, pos:10
-	stack B:14221,	index:9,	to top:11,	price:12, pos:11
-	stack B:11411,	index:8,	to top:12,	price:13, pos:12
-	stack B:16890,	index:12,	to top:13,	price:14, pos:13
-	stack B:2841,	index:2,	to top:-12,	price:13, pos:14
-	stack B:8020,	index:5,	to top:-11,	price:12, pos:15
-	stack B:3797,	index:3,	to top:-10,	price:11, pos:16
-	stack B:10968,	index:7,	to top:-9,	price:10, pos:17
-	stack B:10013,	index:6,	to top:-8,	price:9, pos:18
-	stack B:-358,	index:1,	to top:-7,	price:8, pos:19
-	stack B:5175,	index:4,	to top:-6,	price:7, pos:20
-	stack B:-909,	index:0,	to top:-5,	price:6, pos:21
-	stack B:14927,	index:11,	to top:-4,	price:5, pos:22
-	stack B:17125,	index:13,	to top:-3,	price:4, pos:23
-	stack B:25635,	index:18,	to top:-2,	price:3, pos:24
-	stack B:30542,	index:22,	to top:-1,	price:2, pos:25
+	stack B:34703,	index:14,	to top:1,	price:2, pos:1, target_pos:1
+	stack B:33863,	index:13,	to top:2,	price:3, pos:2, target_pos:1
+	stack B:30478,	index:11,	to top:3,	price:4, pos:3, target_pos:1
+	stack B:27840,	index:10,	to top:4,	price:5, pos:4, target_pos:1
+	stack B:27601,	index:9,	to top:5,	price:6, pos:5, target_pos:1
+	stack B:19898,	index:7,	to top:6,	price:7, pos:6, target_pos:1
+	stack B:17184,	index:6,	to top:7,	price:8, pos:7, target_pos:1
+	stack B:22589,	index:8,	to top:8,	price:9, pos:8, target_pos:1
+	stack B:14539,	index:4,	to top:-7,	price:8, pos:9, target_pos:1
+	stack B:3646,	index:0,	to top:-6,	price:7, pos:10, target_pos:1
+	stack B:12142,	index:2,	to top:-5,	price:6, pos:11, target_pos:1
+	stack B:6966,	index:1,	to top:-4,	price:5, pos:12, target_pos:1
+	stack B:12354,	index:3,	to top:-3,	price:4, pos:13, target_pos:1
+	stack B:14576,	index:5,	to top:-2,	price:3, pos:14, target_pos:1
+	stack B:31736,	index:12,	to top:-1,	price:2, pos:15, target_pos:1
 
 
 	before move
 A:
-	stack A:33194,	index:25,	to top:0,	price:1, pos:0
-	stack A:36431,	index:27,	to top:1,	price:1, pos:1
-	stack A:39428,	index:28,	to top:2,	price:2, pos:2
-	stack A:39463,	index:29,	to top:-2,	price:2, pos:3
-	stack A:36194,	index:26,	to top:-1,	price:2, pos:4
+	stack A:34768,	index:15,	to top:0,	price:1, pos:0, target_pos:1
+	stack A:37778,	index:16,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:38084,	index:17,	to top:2,	price:0, pos:2, target_pos:0
+	stack A:39097,	index:18,	to top:-2,	price:0, pos:3, target_pos:0
+	stack A:39565,	index:19,	to top:-1,	price:0, pos:4, target_pos:0
 
 B:
-	stack B:32117,	index:24,	to top:0,	price:2, pos:0
-	stack B:31034,	index:23,	to top:1,	price:3, pos:1
-	stack B:27403,	index:20,	to top:2,	price:4, pos:2
-	stack B:28151,	index:21,	to top:3,	price:5, pos:3
-	stack B:24990,	index:17,	to top:4,	price:6, pos:4
-	stack B:26922,	index:19,	to top:5,	price:7, pos:5
-	stack B:22874,	index:16,	to top:6,	price:8, pos:6
-	stack B:22408,	index:15,	to top:7,	price:9, pos:7
-	stack B:21932,	index:14,	to top:8,	price:10, pos:8
-	stack B:14631,	index:10,	to top:9,	price:11, pos:9
-	stack B:14221,	index:9,	to top:10,	price:12, pos:10
-	stack B:11411,	index:8,	to top:11,	price:13, pos:11
-	stack B:16890,	index:12,	to top:12,	price:14, pos:12
-	stack B:2841,	index:2,	to top:-12,	price:13, pos:13
-	stack B:8020,	index:5,	to top:-11,	price:12, pos:14
-	stack B:3797,	index:3,	to top:-10,	price:11, pos:15
-	stack B:10968,	index:7,	to top:-9,	price:10, pos:16
-	stack B:10013,	index:6,	to top:-8,	price:9, pos:17
-	stack B:-358,	index:1,	to top:-7,	price:8, pos:18
-	stack B:5175,	index:4,	to top:-6,	price:7, pos:19
-	stack B:-909,	index:0,	to top:-5,	price:6, pos:20
-	stack B:14927,	index:11,	to top:-4,	price:5, pos:21
-	stack B:17125,	index:13,	to top:-3,	price:4, pos:22
-	stack B:25635,	index:18,	to top:-2,	price:3, pos:23
-	stack B:30542,	index:22,	to top:-1,	price:2, pos:24
+	stack B:34703,	index:14,	to top:0,	price:0, pos:0, target_pos:0
+	stack B:33863,	index:13,	to top:1,	price:1, pos:1, target_pos:0
+	stack B:30478,	index:11,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:27840,	index:10,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:27601,	index:9,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:19898,	index:7,	to top:5,	price:5, pos:5, target_pos:0
+	stack B:17184,	index:6,	to top:6,	price:6, pos:6, target_pos:0
+	stack B:22589,	index:8,	to top:7,	price:7, pos:7, target_pos:0
+	stack B:14539,	index:4,	to top:-7,	price:7, pos:8, target_pos:0
+	stack B:3646,	index:0,	to top:-6,	price:6, pos:9, target_pos:0
+	stack B:12142,	index:2,	to top:-5,	price:5, pos:10, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:11, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:12, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:13, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:1, pos:14, target_pos:0
 
 
 	after move
 A:
-	stack A:32117,	index:24,	to top:0,	price:1, pos:0
-	stack A:33194,	index:25,	to top:0,	price:1, pos:0
-	stack A:36431,	index:27,	to top:1,	price:1, pos:1
-	stack A:39428,	index:28,	to top:2,	price:2, pos:2
-	stack A:39463,	index:29,	to top:-2,	price:2, pos:3
-	stack A:36194,	index:26,	to top:-1,	price:2, pos:4
+	stack A:34703,	index:14,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:34768,	index:15,	to top:0,	price:1, pos:0, target_pos:1
+	stack A:37778,	index:16,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:38084,	index:17,	to top:2,	price:0, pos:2, target_pos:0
+	stack A:39097,	index:18,	to top:-2,	price:0, pos:3, target_pos:0
+	stack A:39565,	index:19,	to top:-1,	price:0, pos:4, target_pos:0
 
 B:
-	stack B:31034,	index:23,	to top:1,	price:2, pos:1
-	stack B:27403,	index:20,	to top:2,	price:3, pos:2
-	stack B:28151,	index:21,	to top:3,	price:4, pos:3
-	stack B:24990,	index:17,	to top:4,	price:5, pos:4
-	stack B:26922,	index:19,	to top:5,	price:6, pos:5
-	stack B:22874,	index:16,	to top:6,	price:7, pos:6
-	stack B:22408,	index:15,	to top:7,	price:8, pos:7
-	stack B:21932,	index:14,	to top:8,	price:9, pos:8
-	stack B:14631,	index:10,	to top:9,	price:10, pos:9
-	stack B:14221,	index:9,	to top:10,	price:11, pos:10
-	stack B:11411,	index:8,	to top:11,	price:12, pos:11
-	stack B:16890,	index:12,	to top:12,	price:13, pos:12
-	stack B:2841,	index:2,	to top:-12,	price:13, pos:13
-	stack B:8020,	index:5,	to top:-11,	price:12, pos:14
-	stack B:3797,	index:3,	to top:-10,	price:11, pos:15
-	stack B:10968,	index:7,	to top:-9,	price:10, pos:16
-	stack B:10013,	index:6,	to top:-8,	price:9, pos:17
-	stack B:-358,	index:1,	to top:-7,	price:8, pos:18
-	stack B:5175,	index:4,	to top:-6,	price:7, pos:19
-	stack B:-909,	index:0,	to top:-5,	price:6, pos:20
-	stack B:14927,	index:11,	to top:-4,	price:5, pos:21
-	stack B:17125,	index:13,	to top:-3,	price:4, pos:22
-	stack B:25635,	index:18,	to top:-2,	price:3, pos:23
-	stack B:30542,	index:22,	to top:-1,	price:2, pos:24
+	stack B:33863,	index:13,	to top:1,	price:1, pos:1, target_pos:0
+	stack B:30478,	index:11,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:27840,	index:10,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:27601,	index:9,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:19898,	index:7,	to top:5,	price:5, pos:5, target_pos:0
+	stack B:17184,	index:6,	to top:6,	price:6, pos:6, target_pos:0
+	stack B:22589,	index:8,	to top:7,	price:7, pos:7, target_pos:0
+	stack B:14539,	index:4,	to top:-7,	price:7, pos:8, target_pos:0
+	stack B:3646,	index:0,	to top:-6,	price:6, pos:9, target_pos:0
+	stack B:12142,	index:2,	to top:-5,	price:5, pos:10, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:11, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:12, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:13, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:1, pos:14, target_pos:0
 
 
 	before move
 A:
-	stack A:32117,	index:24,	to top:0,	price:1, pos:0
-	stack A:33194,	index:25,	to top:1,	price:1, pos:1
-	stack A:36431,	index:27,	to top:2,	price:1, pos:2
-	stack A:39428,	index:28,	to top:3,	price:2, pos:3
-	stack A:39463,	index:29,	to top:-2,	price:2, pos:4
-	stack A:36194,	index:26,	to top:-1,	price:2, pos:5
+	stack A:34703,	index:14,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:34768,	index:15,	to top:1,	price:1, pos:1, target_pos:1
+	stack A:37778,	index:16,	to top:2,	price:0, pos:2, target_pos:0
+	stack A:38084,	index:17,	to top:3,	price:0, pos:3, target_pos:0
+	stack A:39097,	index:18,	to top:-2,	price:0, pos:4, target_pos:0
+	stack A:39565,	index:19,	to top:-1,	price:0, pos:5, target_pos:0
 
 B:
-	stack B:31034,	index:23,	to top:0,	price:2, pos:0
-	stack B:27403,	index:20,	to top:1,	price:3, pos:1
-	stack B:28151,	index:21,	to top:2,	price:4, pos:2
-	stack B:24990,	index:17,	to top:3,	price:5, pos:3
-	stack B:26922,	index:19,	to top:4,	price:6, pos:4
-	stack B:22874,	index:16,	to top:5,	price:7, pos:5
-	stack B:22408,	index:15,	to top:6,	price:8, pos:6
-	stack B:21932,	index:14,	to top:7,	price:9, pos:7
-	stack B:14631,	index:10,	to top:8,	price:10, pos:8
-	stack B:14221,	index:9,	to top:9,	price:11, pos:9
-	stack B:11411,	index:8,	to top:10,	price:12, pos:10
-	stack B:16890,	index:12,	to top:11,	price:13, pos:11
-	stack B:2841,	index:2,	to top:12,	price:13, pos:12
-	stack B:8020,	index:5,	to top:-11,	price:12, pos:13
-	stack B:3797,	index:3,	to top:-10,	price:11, pos:14
-	stack B:10968,	index:7,	to top:-9,	price:10, pos:15
-	stack B:10013,	index:6,	to top:-8,	price:9, pos:16
-	stack B:-358,	index:1,	to top:-7,	price:8, pos:17
-	stack B:5175,	index:4,	to top:-6,	price:7, pos:18
-	stack B:-909,	index:0,	to top:-5,	price:6, pos:19
-	stack B:14927,	index:11,	to top:-4,	price:5, pos:20
-	stack B:17125,	index:13,	to top:-3,	price:4, pos:21
-	stack B:25635,	index:18,	to top:-2,	price:3, pos:22
-	stack B:30542,	index:22,	to top:-1,	price:2, pos:23
+	stack B:33863,	index:13,	to top:0,	price:0, pos:0, target_pos:0
+	stack B:30478,	index:11,	to top:1,	price:1, pos:1, target_pos:0
+	stack B:27840,	index:10,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:27601,	index:9,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:19898,	index:7,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:17184,	index:6,	to top:5,	price:5, pos:5, target_pos:0
+	stack B:22589,	index:8,	to top:6,	price:6, pos:6, target_pos:0
+	stack B:14539,	index:4,	to top:7,	price:7, pos:7, target_pos:0
+	stack B:3646,	index:0,	to top:-6,	price:6, pos:8, target_pos:0
+	stack B:12142,	index:2,	to top:-5,	price:5, pos:9, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:10, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:11, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:12, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:1, pos:13, target_pos:0
 
 
 	after move
 A:
-	stack A:31034,	index:23,	to top:0,	price:1, pos:0
-	stack A:32117,	index:24,	to top:0,	price:1, pos:0
-	stack A:33194,	index:25,	to top:1,	price:1, pos:1
-	stack A:36431,	index:27,	to top:2,	price:1, pos:2
-	stack A:39428,	index:28,	to top:3,	price:2, pos:3
-	stack A:39463,	index:29,	to top:-2,	price:2, pos:4
-	stack A:36194,	index:26,	to top:-1,	price:2, pos:5
+	stack A:33863,	index:13,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:34703,	index:14,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:34768,	index:15,	to top:1,	price:1, pos:1, target_pos:1
+	stack A:37778,	index:16,	to top:2,	price:0, pos:2, target_pos:0
+	stack A:38084,	index:17,	to top:3,	price:0, pos:3, target_pos:0
+	stack A:39097,	index:18,	to top:-2,	price:0, pos:4, target_pos:0
+	stack A:39565,	index:19,	to top:-1,	price:0, pos:5, target_pos:0
 
 B:
-	stack B:27403,	index:20,	to top:1,	price:2, pos:1
-	stack B:28151,	index:21,	to top:2,	price:3, pos:2
-	stack B:24990,	index:17,	to top:3,	price:4, pos:3
-	stack B:26922,	index:19,	to top:4,	price:5, pos:4
-	stack B:22874,	index:16,	to top:5,	price:6, pos:5
-	stack B:22408,	index:15,	to top:6,	price:7, pos:6
-	stack B:21932,	index:14,	to top:7,	price:8, pos:7
-	stack B:14631,	index:10,	to top:8,	price:9, pos:8
-	stack B:14221,	index:9,	to top:9,	price:10, pos:9
-	stack B:11411,	index:8,	to top:10,	price:11, pos:10
-	stack B:16890,	index:12,	to top:11,	price:12, pos:11
-	stack B:2841,	index:2,	to top:12,	price:13, pos:12
-	stack B:8020,	index:5,	to top:-11,	price:12, pos:13
-	stack B:3797,	index:3,	to top:-10,	price:11, pos:14
-	stack B:10968,	index:7,	to top:-9,	price:10, pos:15
-	stack B:10013,	index:6,	to top:-8,	price:9, pos:16
-	stack B:-358,	index:1,	to top:-7,	price:8, pos:17
-	stack B:5175,	index:4,	to top:-6,	price:7, pos:18
-	stack B:-909,	index:0,	to top:-5,	price:6, pos:19
-	stack B:14927,	index:11,	to top:-4,	price:5, pos:20
-	stack B:17125,	index:13,	to top:-3,	price:4, pos:21
-	stack B:25635,	index:18,	to top:-2,	price:3, pos:22
-	stack B:30542,	index:22,	to top:-1,	price:2, pos:23
+	stack B:30478,	index:11,	to top:1,	price:1, pos:1, target_pos:0
+	stack B:27840,	index:10,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:27601,	index:9,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:19898,	index:7,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:17184,	index:6,	to top:5,	price:5, pos:5, target_pos:0
+	stack B:22589,	index:8,	to top:6,	price:6, pos:6, target_pos:0
+	stack B:14539,	index:4,	to top:7,	price:7, pos:7, target_pos:0
+	stack B:3646,	index:0,	to top:-6,	price:6, pos:8, target_pos:0
+	stack B:12142,	index:2,	to top:-5,	price:5, pos:9, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:10, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:11, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:12, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:1, pos:13, target_pos:0
 
 
 	before move
 A:
-	stack A:31034,	index:23,	to top:0,	price:1, pos:0
-	stack A:32117,	index:24,	to top:1,	price:1, pos:1
-	stack A:33194,	index:25,	to top:2,	price:1, pos:2
-	stack A:36431,	index:27,	to top:3,	price:1, pos:3
-	stack A:39428,	index:28,	to top:-3,	price:2, pos:4
-	stack A:39463,	index:29,	to top:-2,	price:2, pos:5
-	stack A:36194,	index:26,	to top:-1,	price:2, pos:6
+	stack A:33863,	index:13,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:34703,	index:14,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:34768,	index:15,	to top:2,	price:1, pos:2, target_pos:1
+	stack A:37778,	index:16,	to top:3,	price:0, pos:3, target_pos:0
+	stack A:38084,	index:17,	to top:-3,	price:0, pos:4, target_pos:0
+	stack A:39097,	index:18,	to top:-2,	price:0, pos:5, target_pos:0
+	stack A:39565,	index:19,	to top:-1,	price:0, pos:6, target_pos:0
 
 B:
-	stack B:27403,	index:20,	to top:0,	price:2, pos:0
-	stack B:28151,	index:21,	to top:1,	price:3, pos:1
-	stack B:24990,	index:17,	to top:2,	price:4, pos:2
-	stack B:26922,	index:19,	to top:3,	price:5, pos:3
-	stack B:22874,	index:16,	to top:4,	price:6, pos:4
-	stack B:22408,	index:15,	to top:5,	price:7, pos:5
-	stack B:21932,	index:14,	to top:6,	price:8, pos:6
-	stack B:14631,	index:10,	to top:7,	price:9, pos:7
-	stack B:14221,	index:9,	to top:8,	price:10, pos:8
-	stack B:11411,	index:8,	to top:9,	price:11, pos:9
-	stack B:16890,	index:12,	to top:10,	price:12, pos:10
-	stack B:2841,	index:2,	to top:11,	price:13, pos:11
-	stack B:8020,	index:5,	to top:-11,	price:12, pos:12
-	stack B:3797,	index:3,	to top:-10,	price:11, pos:13
-	stack B:10968,	index:7,	to top:-9,	price:10, pos:14
-	stack B:10013,	index:6,	to top:-8,	price:9, pos:15
-	stack B:-358,	index:1,	to top:-7,	price:8, pos:16
-	stack B:5175,	index:4,	to top:-6,	price:7, pos:17
-	stack B:-909,	index:0,	to top:-5,	price:6, pos:18
-	stack B:14927,	index:11,	to top:-4,	price:5, pos:19
-	stack B:17125,	index:13,	to top:-3,	price:4, pos:20
-	stack B:25635,	index:18,	to top:-2,	price:3, pos:21
-	stack B:30542,	index:22,	to top:-1,	price:2, pos:22
+	stack B:30478,	index:11,	to top:0,	price:0, pos:0, target_pos:0
+	stack B:27840,	index:10,	to top:1,	price:1, pos:1, target_pos:0
+	stack B:27601,	index:9,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:19898,	index:7,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:17184,	index:6,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:22589,	index:8,	to top:5,	price:5, pos:5, target_pos:0
+	stack B:14539,	index:4,	to top:6,	price:6, pos:6, target_pos:0
+	stack B:3646,	index:0,	to top:-6,	price:6, pos:7, target_pos:0
+	stack B:12142,	index:2,	to top:-5,	price:5, pos:8, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:9, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:10, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:11, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:1, pos:12, target_pos:0
 
 
 	after move
 A:
-	stack A:27403,	index:20,	to top:0,	price:1, pos:0
-	stack A:39463,	index:29,	to top:-2,	price:2, pos:5
-	stack A:36194,	index:26,	to top:-1,	price:2, pos:6
-	stack A:31034,	index:23,	to top:0,	price:1, pos:0
-	stack A:32117,	index:24,	to top:1,	price:1, pos:1
-	stack A:33194,	index:25,	to top:2,	price:1, pos:2
-	stack A:36431,	index:27,	to top:3,	price:1, pos:3
-	stack A:39428,	index:28,	to top:-3,	price:2, pos:4
+	stack A:30478,	index:11,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:33863,	index:13,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:34703,	index:14,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:34768,	index:15,	to top:2,	price:1, pos:2, target_pos:1
+	stack A:37778,	index:16,	to top:3,	price:0, pos:3, target_pos:0
+	stack A:38084,	index:17,	to top:-3,	price:0, pos:4, target_pos:0
+	stack A:39097,	index:18,	to top:-2,	price:0, pos:5, target_pos:0
+	stack A:39565,	index:19,	to top:-1,	price:0, pos:6, target_pos:0
 
 B:
-	stack B:28151,	index:21,	to top:1,	price:2, pos:1
-	stack B:24990,	index:17,	to top:2,	price:3, pos:2
-	stack B:26922,	index:19,	to top:3,	price:4, pos:3
-	stack B:22874,	index:16,	to top:4,	price:5, pos:4
-	stack B:22408,	index:15,	to top:5,	price:6, pos:5
-	stack B:21932,	index:14,	to top:6,	price:7, pos:6
-	stack B:14631,	index:10,	to top:7,	price:8, pos:7
-	stack B:14221,	index:9,	to top:8,	price:9, pos:8
-	stack B:11411,	index:8,	to top:9,	price:10, pos:9
-	stack B:16890,	index:12,	to top:10,	price:11, pos:10
-	stack B:2841,	index:2,	to top:11,	price:12, pos:11
-	stack B:8020,	index:5,	to top:-11,	price:12, pos:12
-	stack B:3797,	index:3,	to top:-10,	price:11, pos:13
-	stack B:10968,	index:7,	to top:-9,	price:10, pos:14
-	stack B:10013,	index:6,	to top:-8,	price:9, pos:15
-	stack B:-358,	index:1,	to top:-7,	price:8, pos:16
-	stack B:5175,	index:4,	to top:-6,	price:7, pos:17
-	stack B:-909,	index:0,	to top:-5,	price:6, pos:18
-	stack B:14927,	index:11,	to top:-4,	price:5, pos:19
-	stack B:17125,	index:13,	to top:-3,	price:4, pos:20
-	stack B:25635,	index:18,	to top:-2,	price:3, pos:21
-	stack B:30542,	index:22,	to top:-1,	price:2, pos:22
+	stack B:27840,	index:10,	to top:1,	price:1, pos:1, target_pos:0
+	stack B:27601,	index:9,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:19898,	index:7,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:17184,	index:6,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:22589,	index:8,	to top:5,	price:5, pos:5, target_pos:0
+	stack B:14539,	index:4,	to top:6,	price:6, pos:6, target_pos:0
+	stack B:3646,	index:0,	to top:-6,	price:6, pos:7, target_pos:0
+	stack B:12142,	index:2,	to top:-5,	price:5, pos:8, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:9, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:10, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:11, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:1, pos:12, target_pos:0
 
 
 	before move
 A:
-	stack A:27403,	index:20,	to top:0,	price:1, pos:0
-	stack A:39463,	index:29,	to top:1,	price:2, pos:1
-	stack A:36194,	index:26,	to top:2,	price:2, pos:2
-	stack A:31034,	index:23,	to top:3,	price:1, pos:3
-	stack A:32117,	index:24,	to top:4,	price:1, pos:4
-	stack A:33194,	index:25,	to top:-3,	price:1, pos:5
-	stack A:36431,	index:27,	to top:-2,	price:1, pos:6
-	stack A:39428,	index:28,	to top:-1,	price:2, pos:7
+	stack A:30478,	index:11,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:33863,	index:13,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:34703,	index:14,	to top:2,	price:0, pos:2, target_pos:0
+	stack A:34768,	index:15,	to top:3,	price:1, pos:3, target_pos:1
+	stack A:37778,	index:16,	to top:4,	price:0, pos:4, target_pos:0
+	stack A:38084,	index:17,	to top:-3,	price:0, pos:5, target_pos:0
+	stack A:39097,	index:18,	to top:-2,	price:0, pos:6, target_pos:0
+	stack A:39565,	index:19,	to top:-1,	price:0, pos:7, target_pos:0
 
 B:
-	stack B:28151,	index:21,	to top:0,	price:2, pos:0
-	stack B:24990,	index:17,	to top:1,	price:3, pos:1
-	stack B:26922,	index:19,	to top:2,	price:4, pos:2
-	stack B:22874,	index:16,	to top:3,	price:5, pos:3
-	stack B:22408,	index:15,	to top:4,	price:6, pos:4
-	stack B:21932,	index:14,	to top:5,	price:7, pos:5
-	stack B:14631,	index:10,	to top:6,	price:8, pos:6
-	stack B:14221,	index:9,	to top:7,	price:9, pos:7
-	stack B:11411,	index:8,	to top:8,	price:10, pos:8
-	stack B:16890,	index:12,	to top:9,	price:11, pos:9
-	stack B:2841,	index:2,	to top:10,	price:12, pos:10
-	stack B:8020,	index:5,	to top:11,	price:12, pos:11
-	stack B:3797,	index:3,	to top:-10,	price:11, pos:12
-	stack B:10968,	index:7,	to top:-9,	price:10, pos:13
-	stack B:10013,	index:6,	to top:-8,	price:9, pos:14
-	stack B:-358,	index:1,	to top:-7,	price:8, pos:15
-	stack B:5175,	index:4,	to top:-6,	price:7, pos:16
-	stack B:-909,	index:0,	to top:-5,	price:6, pos:17
-	stack B:14927,	index:11,	to top:-4,	price:5, pos:18
-	stack B:17125,	index:13,	to top:-3,	price:4, pos:19
-	stack B:25635,	index:18,	to top:-2,	price:3, pos:20
-	stack B:30542,	index:22,	to top:-1,	price:2, pos:21
+	stack B:27840,	index:10,	to top:0,	price:0, pos:0, target_pos:0
+	stack B:27601,	index:9,	to top:1,	price:1, pos:1, target_pos:0
+	stack B:19898,	index:7,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:17184,	index:6,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:22589,	index:8,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:14539,	index:4,	to top:5,	price:5, pos:5, target_pos:0
+	stack B:3646,	index:0,	to top:6,	price:6, pos:6, target_pos:0
+	stack B:12142,	index:2,	to top:-5,	price:5, pos:7, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:8, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:9, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:10, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:2, pos:11, target_pos:1
 
 
 	after move
 A:
-	stack A:30542,	index:22,	to top:-1,	price:2, pos:21
-	stack A:39463,	index:29,	to top:1,	price:2, pos:1
-	stack A:36194,	index:26,	to top:2,	price:2, pos:2
-	stack A:31034,	index:23,	to top:3,	price:1, pos:3
-	stack A:32117,	index:24,	to top:4,	price:1, pos:4
-	stack A:33194,	index:25,	to top:-3,	price:1, pos:5
-	stack A:36431,	index:27,	to top:-2,	price:1, pos:6
-	stack A:39428,	index:28,	to top:-1,	price:2, pos:7
-	stack A:27403,	index:20,	to top:0,	price:1, pos:0
+	stack A:27840,	index:10,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:30478,	index:11,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:33863,	index:13,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:34703,	index:14,	to top:2,	price:0, pos:2, target_pos:0
+	stack A:34768,	index:15,	to top:3,	price:1, pos:3, target_pos:1
+	stack A:37778,	index:16,	to top:4,	price:0, pos:4, target_pos:0
+	stack A:38084,	index:17,	to top:-3,	price:0, pos:5, target_pos:0
+	stack A:39097,	index:18,	to top:-2,	price:0, pos:6, target_pos:0
+	stack A:39565,	index:19,	to top:-1,	price:0, pos:7, target_pos:0
 
 B:
-	stack B:28151,	index:21,	to top:0,	price:2, pos:0
-	stack B:24990,	index:17,	to top:1,	price:2, pos:1
-	stack B:26922,	index:19,	to top:2,	price:3, pos:2
-	stack B:22874,	index:16,	to top:3,	price:4, pos:3
-	stack B:22408,	index:15,	to top:4,	price:5, pos:4
-	stack B:21932,	index:14,	to top:5,	price:6, pos:5
-	stack B:14631,	index:10,	to top:6,	price:7, pos:6
-	stack B:14221,	index:9,	to top:7,	price:8, pos:7
-	stack B:11411,	index:8,	to top:8,	price:9, pos:8
-	stack B:16890,	index:12,	to top:9,	price:10, pos:9
-	stack B:2841,	index:2,	to top:10,	price:11, pos:10
-	stack B:8020,	index:5,	to top:11,	price:12, pos:11
-	stack B:3797,	index:3,	to top:-10,	price:11, pos:12
-	stack B:10968,	index:7,	to top:-9,	price:10, pos:13
-	stack B:10013,	index:6,	to top:-8,	price:9, pos:14
-	stack B:-358,	index:1,	to top:-7,	price:8, pos:15
-	stack B:5175,	index:4,	to top:-6,	price:7, pos:16
-	stack B:-909,	index:0,	to top:-5,	price:6, pos:17
-	stack B:14927,	index:11,	to top:-4,	price:5, pos:18
-	stack B:17125,	index:13,	to top:-3,	price:4, pos:19
-	stack B:25635,	index:18,	to top:-2,	price:3, pos:20
+	stack B:27601,	index:9,	to top:1,	price:1, pos:1, target_pos:0
+	stack B:19898,	index:7,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:17184,	index:6,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:22589,	index:8,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:14539,	index:4,	to top:5,	price:5, pos:5, target_pos:0
+	stack B:3646,	index:0,	to top:6,	price:6, pos:6, target_pos:0
+	stack B:12142,	index:2,	to top:-5,	price:5, pos:7, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:8, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:9, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:10, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:2, pos:11, target_pos:1
 
 
 	before move
 A:
-	stack A:30542,	index:22,	to top:0,	price:2, pos:0
-	stack A:39463,	index:29,	to top:1,	price:2, pos:1
-	stack A:36194,	index:26,	to top:2,	price:2, pos:2
-	stack A:31034,	index:23,	to top:3,	price:1, pos:3
-	stack A:32117,	index:24,	to top:4,	price:1, pos:4
-	stack A:33194,	index:25,	to top:-4,	price:1, pos:5
-	stack A:36431,	index:27,	to top:-3,	price:1, pos:6
-	stack A:39428,	index:28,	to top:-2,	price:2, pos:7
-	stack A:27403,	index:20,	to top:-1,	price:1, pos:8
+	stack A:27840,	index:10,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:30478,	index:11,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:33863,	index:13,	to top:2,	price:0, pos:2, target_pos:0
+	stack A:34703,	index:14,	to top:3,	price:0, pos:3, target_pos:0
+	stack A:34768,	index:15,	to top:4,	price:1, pos:4, target_pos:1
+	stack A:37778,	index:16,	to top:-4,	price:0, pos:5, target_pos:0
+	stack A:38084,	index:17,	to top:-3,	price:0, pos:6, target_pos:0
+	stack A:39097,	index:18,	to top:-2,	price:0, pos:7, target_pos:0
+	stack A:39565,	index:19,	to top:-1,	price:0, pos:8, target_pos:0
 
 B:
-	stack B:28151,	index:21,	to top:0,	price:2, pos:0
-	stack B:24990,	index:17,	to top:1,	price:2, pos:1
-	stack B:26922,	index:19,	to top:2,	price:3, pos:2
-	stack B:22874,	index:16,	to top:3,	price:4, pos:3
-	stack B:22408,	index:15,	to top:4,	price:5, pos:4
-	stack B:21932,	index:14,	to top:5,	price:6, pos:5
-	stack B:14631,	index:10,	to top:6,	price:7, pos:6
-	stack B:14221,	index:9,	to top:7,	price:8, pos:7
-	stack B:11411,	index:8,	to top:8,	price:9, pos:8
-	stack B:16890,	index:12,	to top:9,	price:10, pos:9
-	stack B:2841,	index:2,	to top:10,	price:11, pos:10
-	stack B:8020,	index:5,	to top:-10,	price:12, pos:11
-	stack B:3797,	index:3,	to top:-9,	price:11, pos:12
-	stack B:10968,	index:7,	to top:-8,	price:10, pos:13
-	stack B:10013,	index:6,	to top:-7,	price:9, pos:14
-	stack B:-358,	index:1,	to top:-6,	price:8, pos:15
-	stack B:5175,	index:4,	to top:-5,	price:7, pos:16
-	stack B:-909,	index:0,	to top:-4,	price:6, pos:17
-	stack B:14927,	index:11,	to top:-3,	price:5, pos:18
-	stack B:17125,	index:13,	to top:-2,	price:4, pos:19
-	stack B:25635,	index:18,	to top:-1,	price:3, pos:20
+	stack B:27601,	index:9,	to top:0,	price:0, pos:0, target_pos:0
+	stack B:19898,	index:7,	to top:1,	price:1, pos:1, target_pos:0
+	stack B:17184,	index:6,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:22589,	index:8,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:14539,	index:4,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:3646,	index:0,	to top:5,	price:5, pos:5, target_pos:0
+	stack B:12142,	index:2,	to top:-5,	price:5, pos:6, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:7, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:8, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:9, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:3, pos:10, target_pos:2
 
 
 	after move
 A:
-	stack A:28151,	index:21,	to top:0,	price:1, pos:0
-	stack A:30542,	index:22,	to top:0,	price:1, pos:0
-	stack A:39463,	index:29,	to top:1,	price:2, pos:1
-	stack A:36194,	index:26,	to top:2,	price:2, pos:2
-	stack A:31034,	index:23,	to top:3,	price:1, pos:3
-	stack A:32117,	index:24,	to top:4,	price:1, pos:4
-	stack A:33194,	index:25,	to top:-4,	price:1, pos:5
-	stack A:36431,	index:27,	to top:-3,	price:1, pos:6
-	stack A:39428,	index:28,	to top:-2,	price:2, pos:7
-	stack A:27403,	index:20,	to top:-1,	price:1, pos:8
+	stack A:27601,	index:9,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:27840,	index:10,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:30478,	index:11,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:33863,	index:13,	to top:2,	price:0, pos:2, target_pos:0
+	stack A:34703,	index:14,	to top:3,	price:0, pos:3, target_pos:0
+	stack A:34768,	index:15,	to top:4,	price:1, pos:4, target_pos:1
+	stack A:37778,	index:16,	to top:-4,	price:0, pos:5, target_pos:0
+	stack A:38084,	index:17,	to top:-3,	price:0, pos:6, target_pos:0
+	stack A:39097,	index:18,	to top:-2,	price:0, pos:7, target_pos:0
+	stack A:39565,	index:19,	to top:-1,	price:0, pos:8, target_pos:0
 
 B:
-	stack B:24990,	index:17,	to top:1,	price:2, pos:1
-	stack B:26922,	index:19,	to top:2,	price:3, pos:2
-	stack B:22874,	index:16,	to top:3,	price:4, pos:3
-	stack B:22408,	index:15,	to top:4,	price:5, pos:4
-	stack B:21932,	index:14,	to top:5,	price:6, pos:5
-	stack B:14631,	index:10,	to top:6,	price:7, pos:6
-	stack B:14221,	index:9,	to top:7,	price:8, pos:7
-	stack B:11411,	index:8,	to top:8,	price:9, pos:8
-	stack B:16890,	index:12,	to top:9,	price:10, pos:9
-	stack B:2841,	index:2,	to top:10,	price:11, pos:10
-	stack B:8020,	index:5,	to top:-10,	price:11, pos:11
-	stack B:3797,	index:3,	to top:-9,	price:10, pos:12
-	stack B:10968,	index:7,	to top:-8,	price:9, pos:13
-	stack B:10013,	index:6,	to top:-7,	price:8, pos:14
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:15
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:16
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:17
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:18
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:19
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:20
+	stack B:19898,	index:7,	to top:1,	price:1, pos:1, target_pos:0
+	stack B:17184,	index:6,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:22589,	index:8,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:14539,	index:4,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:3646,	index:0,	to top:5,	price:5, pos:5, target_pos:0
+	stack B:12142,	index:2,	to top:-5,	price:5, pos:6, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:7, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:8, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:9, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:3, pos:10, target_pos:2
 
 
 	before move
 A:
-	stack A:28151,	index:21,	to top:0,	price:1, pos:0
-	stack A:30542,	index:22,	to top:1,	price:1, pos:1
-	stack A:39463,	index:29,	to top:2,	price:2, pos:2
-	stack A:36194,	index:26,	to top:3,	price:2, pos:3
-	stack A:31034,	index:23,	to top:4,	price:1, pos:4
-	stack A:32117,	index:24,	to top:5,	price:1, pos:5
-	stack A:33194,	index:25,	to top:-4,	price:1, pos:6
-	stack A:36431,	index:27,	to top:-3,	price:1, pos:7
-	stack A:39428,	index:28,	to top:-2,	price:2, pos:8
-	stack A:27403,	index:20,	to top:-1,	price:1, pos:9
+	stack A:27601,	index:9,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:27840,	index:10,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:30478,	index:11,	to top:2,	price:0, pos:2, target_pos:0
+	stack A:33863,	index:13,	to top:3,	price:0, pos:3, target_pos:0
+	stack A:34703,	index:14,	to top:4,	price:0, pos:4, target_pos:0
+	stack A:34768,	index:15,	to top:5,	price:1, pos:5, target_pos:1
+	stack A:37778,	index:16,	to top:-4,	price:0, pos:6, target_pos:0
+	stack A:38084,	index:17,	to top:-3,	price:0, pos:7, target_pos:0
+	stack A:39097,	index:18,	to top:-2,	price:0, pos:8, target_pos:0
+	stack A:39565,	index:19,	to top:-1,	price:0, pos:9, target_pos:0
 
 B:
-	stack B:24990,	index:17,	to top:0,	price:2, pos:0
-	stack B:26922,	index:19,	to top:1,	price:3, pos:1
-	stack B:22874,	index:16,	to top:2,	price:4, pos:2
-	stack B:22408,	index:15,	to top:3,	price:5, pos:3
-	stack B:21932,	index:14,	to top:4,	price:6, pos:4
-	stack B:14631,	index:10,	to top:5,	price:7, pos:5
-	stack B:14221,	index:9,	to top:6,	price:8, pos:6
-	stack B:11411,	index:8,	to top:7,	price:9, pos:7
-	stack B:16890,	index:12,	to top:8,	price:10, pos:8
-	stack B:2841,	index:2,	to top:9,	price:11, pos:9
-	stack B:8020,	index:5,	to top:10,	price:11, pos:10
-	stack B:3797,	index:3,	to top:-9,	price:10, pos:11
-	stack B:10968,	index:7,	to top:-8,	price:9, pos:12
-	stack B:10013,	index:6,	to top:-7,	price:8, pos:13
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:14
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:15
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:16
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:17
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:18
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:19
+	stack B:19898,	index:7,	to top:0,	price:0, pos:0, target_pos:0
+	stack B:17184,	index:6,	to top:1,	price:1, pos:1, target_pos:0
+	stack B:22589,	index:8,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:14539,	index:4,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:3646,	index:0,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:12142,	index:2,	to top:5,	price:5, pos:5, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:6, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:7, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:8, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:4, pos:9, target_pos:3
 
 
 	after move
 A:
-	stack A:24990,	index:17,	to top:0,	price:1, pos:0
-	stack A:28151,	index:21,	to top:0,	price:1, pos:0
-	stack A:30542,	index:22,	to top:1,	price:1, pos:1
-	stack A:39463,	index:29,	to top:2,	price:2, pos:2
-	stack A:36194,	index:26,	to top:3,	price:2, pos:3
-	stack A:31034,	index:23,	to top:4,	price:1, pos:4
-	stack A:32117,	index:24,	to top:5,	price:1, pos:5
-	stack A:33194,	index:25,	to top:-4,	price:1, pos:6
-	stack A:36431,	index:27,	to top:-3,	price:1, pos:7
-	stack A:39428,	index:28,	to top:-2,	price:2, pos:8
-	stack A:27403,	index:20,	to top:-1,	price:1, pos:9
+	stack A:19898,	index:7,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:27601,	index:9,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:27840,	index:10,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:30478,	index:11,	to top:2,	price:0, pos:2, target_pos:0
+	stack A:33863,	index:13,	to top:3,	price:0, pos:3, target_pos:0
+	stack A:34703,	index:14,	to top:4,	price:0, pos:4, target_pos:0
+	stack A:34768,	index:15,	to top:5,	price:1, pos:5, target_pos:1
+	stack A:37778,	index:16,	to top:-4,	price:0, pos:6, target_pos:0
+	stack A:38084,	index:17,	to top:-3,	price:0, pos:7, target_pos:0
+	stack A:39097,	index:18,	to top:-2,	price:0, pos:8, target_pos:0
+	stack A:39565,	index:19,	to top:-1,	price:0, pos:9, target_pos:0
 
 B:
-	stack B:26922,	index:19,	to top:1,	price:2, pos:1
-	stack B:22874,	index:16,	to top:2,	price:3, pos:2
-	stack B:22408,	index:15,	to top:3,	price:4, pos:3
-	stack B:21932,	index:14,	to top:4,	price:5, pos:4
-	stack B:14631,	index:10,	to top:5,	price:6, pos:5
-	stack B:14221,	index:9,	to top:6,	price:7, pos:6
-	stack B:11411,	index:8,	to top:7,	price:8, pos:7
-	stack B:16890,	index:12,	to top:8,	price:9, pos:8
-	stack B:2841,	index:2,	to top:9,	price:10, pos:9
-	stack B:8020,	index:5,	to top:10,	price:11, pos:10
-	stack B:3797,	index:3,	to top:-9,	price:10, pos:11
-	stack B:10968,	index:7,	to top:-8,	price:9, pos:12
-	stack B:10013,	index:6,	to top:-7,	price:8, pos:13
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:14
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:15
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:16
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:17
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:18
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:19
+	stack B:17184,	index:6,	to top:1,	price:1, pos:1, target_pos:0
+	stack B:22589,	index:8,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:14539,	index:4,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:3646,	index:0,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:12142,	index:2,	to top:5,	price:5, pos:5, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:6, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:7, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:8, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:4, pos:9, target_pos:3
 
 
 	before move
 A:
-	stack A:24990,	index:17,	to top:0,	price:1, pos:0
-	stack A:28151,	index:21,	to top:1,	price:1, pos:1
-	stack A:30542,	index:22,	to top:2,	price:1, pos:2
-	stack A:39463,	index:29,	to top:3,	price:2, pos:3
-	stack A:36194,	index:26,	to top:4,	price:2, pos:4
-	stack A:31034,	index:23,	to top:5,	price:1, pos:5
-	stack A:32117,	index:24,	to top:-5,	price:1, pos:6
-	stack A:33194,	index:25,	to top:-4,	price:1, pos:7
-	stack A:36431,	index:27,	to top:-3,	price:1, pos:8
-	stack A:39428,	index:28,	to top:-2,	price:2, pos:9
-	stack A:27403,	index:20,	to top:-1,	price:1, pos:10
+	stack A:19898,	index:7,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:27601,	index:9,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:27840,	index:10,	to top:2,	price:0, pos:2, target_pos:0
+	stack A:30478,	index:11,	to top:3,	price:0, pos:3, target_pos:0
+	stack A:33863,	index:13,	to top:4,	price:0, pos:4, target_pos:0
+	stack A:34703,	index:14,	to top:5,	price:0, pos:5, target_pos:0
+	stack A:34768,	index:15,	to top:-5,	price:1, pos:6, target_pos:1
+	stack A:37778,	index:16,	to top:-4,	price:0, pos:7, target_pos:0
+	stack A:38084,	index:17,	to top:-3,	price:0, pos:8, target_pos:0
+	stack A:39097,	index:18,	to top:-2,	price:0, pos:9, target_pos:0
+	stack A:39565,	index:19,	to top:-1,	price:0, pos:10, target_pos:0
 
 B:
-	stack B:26922,	index:19,	to top:0,	price:2, pos:0
-	stack B:22874,	index:16,	to top:1,	price:3, pos:1
-	stack B:22408,	index:15,	to top:2,	price:4, pos:2
-	stack B:21932,	index:14,	to top:3,	price:5, pos:3
-	stack B:14631,	index:10,	to top:4,	price:6, pos:4
-	stack B:14221,	index:9,	to top:5,	price:7, pos:5
-	stack B:11411,	index:8,	to top:6,	price:8, pos:6
-	stack B:16890,	index:12,	to top:7,	price:9, pos:7
-	stack B:2841,	index:2,	to top:8,	price:10, pos:8
-	stack B:8020,	index:5,	to top:9,	price:11, pos:9
-	stack B:3797,	index:3,	to top:-9,	price:10, pos:10
-	stack B:10968,	index:7,	to top:-8,	price:9, pos:11
-	stack B:10013,	index:6,	to top:-7,	price:8, pos:12
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:13
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:14
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:15
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:16
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:17
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:18
+	stack B:17184,	index:6,	to top:0,	price:0, pos:0, target_pos:0
+	stack B:22589,	index:8,	to top:1,	price:2, pos:1, target_pos:1
+	stack B:14539,	index:4,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:3646,	index:0,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:12142,	index:2,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:5, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:6, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:7, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:5, pos:8, target_pos:4
 
 
 	after move
 A:
-	stack A:26922,	index:19,	to top:0,	price:2, pos:0
-	stack A:28151,	index:21,	to top:1,	price:1, pos:1
-	stack A:30542,	index:22,	to top:2,	price:1, pos:2
-	stack A:39463,	index:29,	to top:3,	price:2, pos:3
-	stack A:36194,	index:26,	to top:4,	price:2, pos:4
-	stack A:31034,	index:23,	to top:5,	price:1, pos:5
-	stack A:32117,	index:24,	to top:-5,	price:1, pos:6
-	stack A:33194,	index:25,	to top:-4,	price:1, pos:7
-	stack A:36431,	index:27,	to top:-3,	price:1, pos:8
-	stack A:39428,	index:28,	to top:-2,	price:2, pos:9
-	stack A:27403,	index:20,	to top:-1,	price:1, pos:10
-	stack A:24990,	index:17,	to top:0,	price:1, pos:0
+	stack A:17184,	index:6,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:19898,	index:7,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:27601,	index:9,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:27840,	index:10,	to top:2,	price:0, pos:2, target_pos:0
+	stack A:30478,	index:11,	to top:3,	price:0, pos:3, target_pos:0
+	stack A:33863,	index:13,	to top:4,	price:0, pos:4, target_pos:0
+	stack A:34703,	index:14,	to top:5,	price:0, pos:5, target_pos:0
+	stack A:34768,	index:15,	to top:-5,	price:1, pos:6, target_pos:1
+	stack A:37778,	index:16,	to top:-4,	price:0, pos:7, target_pos:0
+	stack A:38084,	index:17,	to top:-3,	price:0, pos:8, target_pos:0
+	stack A:39097,	index:18,	to top:-2,	price:0, pos:9, target_pos:0
+	stack A:39565,	index:19,	to top:-1,	price:0, pos:10, target_pos:0
 
 B:
-	stack B:22874,	index:16,	to top:1,	price:2, pos:1
-	stack B:22408,	index:15,	to top:2,	price:3, pos:2
-	stack B:21932,	index:14,	to top:3,	price:4, pos:3
-	stack B:14631,	index:10,	to top:4,	price:5, pos:4
-	stack B:14221,	index:9,	to top:5,	price:6, pos:5
-	stack B:11411,	index:8,	to top:6,	price:7, pos:6
-	stack B:16890,	index:12,	to top:7,	price:8, pos:7
-	stack B:2841,	index:2,	to top:8,	price:9, pos:8
-	stack B:8020,	index:5,	to top:9,	price:10, pos:9
-	stack B:3797,	index:3,	to top:-9,	price:10, pos:10
-	stack B:10968,	index:7,	to top:-8,	price:9, pos:11
-	stack B:10013,	index:6,	to top:-7,	price:8, pos:12
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:13
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:14
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:15
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:16
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:17
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:18
+	stack B:22589,	index:8,	to top:1,	price:2, pos:1, target_pos:1
+	stack B:14539,	index:4,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:3646,	index:0,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:12142,	index:2,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:6966,	index:1,	to top:-4,	price:4, pos:5, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:6, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:7, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:5, pos:8, target_pos:4
 
 
 	before move
 A:
-	stack A:26922,	index:19,	to top:0,	price:2, pos:0
-	stack A:28151,	index:21,	to top:1,	price:1, pos:1
-	stack A:30542,	index:22,	to top:2,	price:1, pos:2
-	stack A:39463,	index:29,	to top:3,	price:2, pos:3
-	stack A:36194,	index:26,	to top:4,	price:2, pos:4
-	stack A:31034,	index:23,	to top:5,	price:1, pos:5
-	stack A:32117,	index:24,	to top:6,	price:1, pos:6
-	stack A:33194,	index:25,	to top:-5,	price:1, pos:7
-	stack A:36431,	index:27,	to top:-4,	price:1, pos:8
-	stack A:39428,	index:28,	to top:-3,	price:2, pos:9
-	stack A:27403,	index:20,	to top:-2,	price:1, pos:10
-	stack A:24990,	index:17,	to top:-1,	price:1, pos:11
+	stack A:17184,	index:6,	to top:0,	price:0, pos:0, target_pos:0
+	stack A:19898,	index:7,	to top:1,	price:0, pos:1, target_pos:0
+	stack A:27601,	index:9,	to top:2,	price:0, pos:2, target_pos:0
+	stack A:27840,	index:10,	to top:3,	price:0, pos:3, target_pos:0
+	stack A:30478,	index:11,	to top:4,	price:0, pos:4, target_pos:0
+	stack A:33863,	index:13,	to top:5,	price:0, pos:5, target_pos:0
+	stack A:34703,	index:14,	to top:6,	price:0, pos:6, target_pos:0
+	stack A:34768,	index:15,	to top:-5,	price:1, pos:7, target_pos:1
+	stack A:37778,	index:16,	to top:-4,	price:0, pos:8, target_pos:0
+	stack A:38084,	index:17,	to top:-3,	price:0, pos:9, target_pos:0
+	stack A:39097,	index:18,	to top:-2,	price:0, pos:10, target_pos:0
+	stack A:39565,	index:19,	to top:-1,	price:0, pos:11, target_pos:0
 
 B:
-	stack B:22874,	index:16,	to top:0,	price:2, pos:0
-	stack B:22408,	index:15,	to top:1,	price:3, pos:1
-	stack B:21932,	index:14,	to top:2,	price:4, pos:2
-	stack B:14631,	index:10,	to top:3,	price:5, pos:3
-	stack B:14221,	index:9,	to top:4,	price:6, pos:4
-	stack B:11411,	index:8,	to top:5,	price:7, pos:5
-	stack B:16890,	index:12,	to top:6,	price:8, pos:6
-	stack B:2841,	index:2,	to top:7,	price:9, pos:7
-	stack B:8020,	index:5,	to top:8,	price:10, pos:8
-	stack B:3797,	index:3,	to top:9,	price:10, pos:9
-	stack B:10968,	index:7,	to top:-8,	price:9, pos:10
-	stack B:10013,	index:6,	to top:-7,	price:8, pos:11
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:12
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:13
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:14
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:15
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:16
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:17
-
-
-	after move
-A:
-	stack A:22874,	index:16,	to top:0,	price:1, pos:0
-	stack A:26922,	index:19,	to top:0,	price:1, pos:0
-	stack A:28151,	index:21,	to top:1,	price:1, pos:1
-	stack A:30542,	index:22,	to top:2,	price:1, pos:2
-	stack A:39463,	index:29,	to top:3,	price:2, pos:3
-	stack A:36194,	index:26,	to top:4,	price:2, pos:4
-	stack A:31034,	index:23,	to top:5,	price:1, pos:5
-	stack A:32117,	index:24,	to top:6,	price:1, pos:6
-	stack A:33194,	index:25,	to top:-5,	price:1, pos:7
-	stack A:36431,	index:27,	to top:-4,	price:1, pos:8
-	stack A:39428,	index:28,	to top:-3,	price:2, pos:9
-	stack A:27403,	index:20,	to top:-2,	price:1, pos:10
-	stack A:24990,	index:17,	to top:-1,	price:1, pos:11
-
-B:
-	stack B:22408,	index:15,	to top:1,	price:2, pos:1
-	stack B:21932,	index:14,	to top:2,	price:3, pos:2
-	stack B:14631,	index:10,	to top:3,	price:4, pos:3
-	stack B:14221,	index:9,	to top:4,	price:5, pos:4
-	stack B:11411,	index:8,	to top:5,	price:6, pos:5
-	stack B:16890,	index:12,	to top:6,	price:7, pos:6
-	stack B:2841,	index:2,	to top:7,	price:8, pos:7
-	stack B:8020,	index:5,	to top:8,	price:9, pos:8
-	stack B:3797,	index:3,	to top:9,	price:10, pos:9
-	stack B:10968,	index:7,	to top:-8,	price:9, pos:10
-	stack B:10013,	index:6,	to top:-7,	price:8, pos:11
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:12
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:13
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:14
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:15
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:16
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:17
-
-
-	before move
-A:
-	stack A:22874,	index:16,	to top:0,	price:1, pos:0
-	stack A:26922,	index:19,	to top:1,	price:1, pos:1
-	stack A:28151,	index:21,	to top:2,	price:1, pos:2
-	stack A:30542,	index:22,	to top:3,	price:1, pos:3
-	stack A:39463,	index:29,	to top:4,	price:2, pos:4
-	stack A:36194,	index:26,	to top:5,	price:2, pos:5
-	stack A:31034,	index:23,	to top:6,	price:1, pos:6
-	stack A:32117,	index:24,	to top:-6,	price:1, pos:7
-	stack A:33194,	index:25,	to top:-5,	price:1, pos:8
-	stack A:36431,	index:27,	to top:-4,	price:1, pos:9
-	stack A:39428,	index:28,	to top:-3,	price:2, pos:10
-	stack A:27403,	index:20,	to top:-2,	price:1, pos:11
-	stack A:24990,	index:17,	to top:-1,	price:1, pos:12
-
-B:
-	stack B:22408,	index:15,	to top:0,	price:2, pos:0
-	stack B:21932,	index:14,	to top:1,	price:3, pos:1
-	stack B:14631,	index:10,	to top:2,	price:4, pos:2
-	stack B:14221,	index:9,	to top:3,	price:5, pos:3
-	stack B:11411,	index:8,	to top:4,	price:6, pos:4
-	stack B:16890,	index:12,	to top:5,	price:7, pos:5
-	stack B:2841,	index:2,	to top:6,	price:8, pos:6
-	stack B:8020,	index:5,	to top:7,	price:9, pos:7
-	stack B:3797,	index:3,	to top:8,	price:10, pos:8
-	stack B:10968,	index:7,	to top:-8,	price:9, pos:9
-	stack B:10013,	index:6,	to top:-7,	price:8, pos:10
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:11
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:12
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:13
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:14
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:15
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:16
-
-
-	after move
-A:
-	stack A:22408,	index:15,	to top:0,	price:1, pos:0
-	stack A:22874,	index:16,	to top:0,	price:1, pos:0
-	stack A:26922,	index:19,	to top:1,	price:1, pos:1
-	stack A:28151,	index:21,	to top:2,	price:1, pos:2
-	stack A:30542,	index:22,	to top:3,	price:1, pos:3
-	stack A:39463,	index:29,	to top:4,	price:2, pos:4
-	stack A:36194,	index:26,	to top:5,	price:2, pos:5
-	stack A:31034,	index:23,	to top:6,	price:1, pos:6
-	stack A:32117,	index:24,	to top:-6,	price:1, pos:7
-	stack A:33194,	index:25,	to top:-5,	price:1, pos:8
-	stack A:36431,	index:27,	to top:-4,	price:1, pos:9
-	stack A:39428,	index:28,	to top:-3,	price:2, pos:10
-	stack A:27403,	index:20,	to top:-2,	price:1, pos:11
-	stack A:24990,	index:17,	to top:-1,	price:1, pos:12
-
-B:
-	stack B:21932,	index:14,	to top:1,	price:2, pos:1
-	stack B:14631,	index:10,	to top:2,	price:3, pos:2
-	stack B:14221,	index:9,	to top:3,	price:4, pos:3
-	stack B:11411,	index:8,	to top:4,	price:5, pos:4
-	stack B:16890,	index:12,	to top:5,	price:6, pos:5
-	stack B:2841,	index:2,	to top:6,	price:7, pos:6
-	stack B:8020,	index:5,	to top:7,	price:8, pos:7
-	stack B:3797,	index:3,	to top:8,	price:9, pos:8
-	stack B:10968,	index:7,	to top:-8,	price:9, pos:9
-	stack B:10013,	index:6,	to top:-7,	price:8, pos:10
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:11
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:12
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:13
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:14
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:15
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:16
-
-
-	before move
-A:
-	stack A:22408,	index:15,	to top:0,	price:1, pos:0
-	stack A:22874,	index:16,	to top:1,	price:1, pos:1
-	stack A:26922,	index:19,	to top:2,	price:1, pos:2
-	stack A:28151,	index:21,	to top:3,	price:1, pos:3
-	stack A:30542,	index:22,	to top:4,	price:1, pos:4
-	stack A:39463,	index:29,	to top:5,	price:2, pos:5
-	stack A:36194,	index:26,	to top:6,	price:2, pos:6
-	stack A:31034,	index:23,	to top:7,	price:1, pos:7
-	stack A:32117,	index:24,	to top:-6,	price:1, pos:8
-	stack A:33194,	index:25,	to top:-5,	price:1, pos:9
-	stack A:36431,	index:27,	to top:-4,	price:1, pos:10
-	stack A:39428,	index:28,	to top:-3,	price:2, pos:11
-	stack A:27403,	index:20,	to top:-2,	price:1, pos:12
-	stack A:24990,	index:17,	to top:-1,	price:1, pos:13
-
-B:
-	stack B:21932,	index:14,	to top:0,	price:2, pos:0
-	stack B:14631,	index:10,	to top:1,	price:3, pos:1
-	stack B:14221,	index:9,	to top:2,	price:4, pos:2
-	stack B:11411,	index:8,	to top:3,	price:5, pos:3
-	stack B:16890,	index:12,	to top:4,	price:6, pos:4
-	stack B:2841,	index:2,	to top:5,	price:7, pos:5
-	stack B:8020,	index:5,	to top:6,	price:8, pos:6
-	stack B:3797,	index:3,	to top:7,	price:9, pos:7
-	stack B:10968,	index:7,	to top:8,	price:9, pos:8
-	stack B:10013,	index:6,	to top:-7,	price:8, pos:9
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:10
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:11
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:12
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:13
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:14
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:15
-
-
-	after move
-A:
-	stack A:21932,	index:14,	to top:0,	price:1, pos:0
-	stack A:22408,	index:15,	to top:0,	price:1, pos:0
-	stack A:22874,	index:16,	to top:1,	price:1, pos:1
-	stack A:26922,	index:19,	to top:2,	price:1, pos:2
-	stack A:28151,	index:21,	to top:3,	price:1, pos:3
-	stack A:30542,	index:22,	to top:4,	price:1, pos:4
-	stack A:39463,	index:29,	to top:5,	price:2, pos:5
-	stack A:36194,	index:26,	to top:6,	price:2, pos:6
-	stack A:31034,	index:23,	to top:7,	price:1, pos:7
-	stack A:32117,	index:24,	to top:-6,	price:1, pos:8
-	stack A:33194,	index:25,	to top:-5,	price:1, pos:9
-	stack A:36431,	index:27,	to top:-4,	price:1, pos:10
-	stack A:39428,	index:28,	to top:-3,	price:2, pos:11
-	stack A:27403,	index:20,	to top:-2,	price:1, pos:12
-	stack A:24990,	index:17,	to top:-1,	price:1, pos:13
-
-B:
-	stack B:14631,	index:10,	to top:1,	price:2, pos:1
-	stack B:14221,	index:9,	to top:2,	price:3, pos:2
-	stack B:11411,	index:8,	to top:3,	price:4, pos:3
-	stack B:16890,	index:12,	to top:4,	price:5, pos:4
-	stack B:2841,	index:2,	to top:5,	price:6, pos:5
-	stack B:8020,	index:5,	to top:6,	price:7, pos:6
-	stack B:3797,	index:3,	to top:7,	price:8, pos:7
-	stack B:10968,	index:7,	to top:8,	price:9, pos:8
-	stack B:10013,	index:6,	to top:-7,	price:8, pos:9
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:10
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:11
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:12
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:13
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:14
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:15
-
-
-	before move
-A:
-	stack A:21932,	index:14,	to top:0,	price:1, pos:0
-	stack A:22408,	index:15,	to top:1,	price:1, pos:1
-	stack A:22874,	index:16,	to top:2,	price:1, pos:2
-	stack A:26922,	index:19,	to top:3,	price:1, pos:3
-	stack A:28151,	index:21,	to top:4,	price:1, pos:4
-	stack A:30542,	index:22,	to top:5,	price:1, pos:5
-	stack A:39463,	index:29,	to top:6,	price:2, pos:6
-	stack A:36194,	index:26,	to top:7,	price:2, pos:7
-	stack A:31034,	index:23,	to top:-7,	price:1, pos:8
-	stack A:32117,	index:24,	to top:-6,	price:1, pos:9
-	stack A:33194,	index:25,	to top:-5,	price:1, pos:10
-	stack A:36431,	index:27,	to top:-4,	price:1, pos:11
-	stack A:39428,	index:28,	to top:-3,	price:2, pos:12
-	stack A:27403,	index:20,	to top:-2,	price:1, pos:13
-	stack A:24990,	index:17,	to top:-1,	price:1, pos:14
-
-B:
-	stack B:14631,	index:10,	to top:0,	price:2, pos:0
-	stack B:14221,	index:9,	to top:1,	price:3, pos:1
-	stack B:11411,	index:8,	to top:2,	price:4, pos:2
-	stack B:16890,	index:12,	to top:3,	price:5, pos:3
-	stack B:2841,	index:2,	to top:4,	price:6, pos:4
-	stack B:8020,	index:5,	to top:5,	price:7, pos:5
-	stack B:3797,	index:3,	to top:6,	price:8, pos:6
-	stack B:10968,	index:7,	to top:7,	price:9, pos:7
-	stack B:10013,	index:6,	to top:-7,	price:8, pos:8
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:9
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:10
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:11
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:12
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:13
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:14
-
-
-	after move
-A:
-	stack A:14631,	index:10,	to top:0,	price:1, pos:0
-	stack A:30542,	index:22,	to top:5,	price:1, pos:5
-	stack A:39463,	index:29,	to top:6,	price:2, pos:6
-	stack A:36194,	index:26,	to top:7,	price:2, pos:7
-	stack A:31034,	index:23,	to top:-7,	price:1, pos:8
-	stack A:32117,	index:24,	to top:-6,	price:1, pos:9
-	stack A:33194,	index:25,	to top:-5,	price:1, pos:10
-	stack A:36431,	index:27,	to top:-4,	price:1, pos:11
-	stack A:39428,	index:28,	to top:-3,	price:2, pos:12
-	stack A:27403,	index:20,	to top:-2,	price:1, pos:13
-	stack A:24990,	index:17,	to top:-1,	price:1, pos:14
-	stack A:21932,	index:14,	to top:0,	price:1, pos:0
-	stack A:22408,	index:15,	to top:1,	price:1, pos:1
-	stack A:22874,	index:16,	to top:2,	price:1, pos:2
-	stack A:26922,	index:19,	to top:3,	price:1, pos:3
-	stack A:28151,	index:21,	to top:4,	price:1, pos:4
-
-B:
-	stack B:14221,	index:9,	to top:1,	price:2, pos:1
-	stack B:11411,	index:8,	to top:2,	price:3, pos:2
-	stack B:16890,	index:12,	to top:3,	price:4, pos:3
-	stack B:2841,	index:2,	to top:4,	price:5, pos:4
-	stack B:8020,	index:5,	to top:5,	price:6, pos:5
-	stack B:3797,	index:3,	to top:6,	price:7, pos:6
-	stack B:10968,	index:7,	to top:7,	price:8, pos:7
-	stack B:10013,	index:6,	to top:-7,	price:8, pos:8
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:9
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:10
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:11
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:12
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:13
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:14
-
-
-	before move
-A:
-	stack A:14631,	index:10,	to top:0,	price:1, pos:0
-	stack A:30542,	index:22,	to top:1,	price:1, pos:1
-	stack A:39463,	index:29,	to top:2,	price:2, pos:2
-	stack A:36194,	index:26,	to top:3,	price:2, pos:3
-	stack A:31034,	index:23,	to top:4,	price:1, pos:4
-	stack A:32117,	index:24,	to top:5,	price:1, pos:5
-	stack A:33194,	index:25,	to top:6,	price:1, pos:6
-	stack A:36431,	index:27,	to top:7,	price:1, pos:7
-	stack A:39428,	index:28,	to top:8,	price:2, pos:8
-	stack A:27403,	index:20,	to top:-7,	price:1, pos:9
-	stack A:24990,	index:17,	to top:-6,	price:1, pos:10
-	stack A:21932,	index:14,	to top:-5,	price:1, pos:11
-	stack A:22408,	index:15,	to top:-4,	price:1, pos:12
-	stack A:22874,	index:16,	to top:-3,	price:1, pos:13
-	stack A:26922,	index:19,	to top:-2,	price:1, pos:14
-	stack A:28151,	index:21,	to top:-1,	price:1, pos:15
-
-B:
-	stack B:14221,	index:9,	to top:0,	price:2, pos:0
-	stack B:11411,	index:8,	to top:1,	price:3, pos:1
-	stack B:16890,	index:12,	to top:2,	price:4, pos:2
-	stack B:2841,	index:2,	to top:3,	price:5, pos:3
-	stack B:8020,	index:5,	to top:4,	price:6, pos:4
-	stack B:3797,	index:3,	to top:5,	price:7, pos:5
-	stack B:10968,	index:7,	to top:6,	price:8, pos:6
-	stack B:10013,	index:6,	to top:7,	price:8, pos:7
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:8
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:9
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:10
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:11
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:12
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:13
-
-
-	after move
-A:
-	stack A:14221,	index:9,	to top:0,	price:1, pos:0
-	stack A:14631,	index:10,	to top:0,	price:1, pos:0
-	stack A:30542,	index:22,	to top:1,	price:1, pos:1
-	stack A:39463,	index:29,	to top:2,	price:2, pos:2
-	stack A:36194,	index:26,	to top:3,	price:2, pos:3
-	stack A:31034,	index:23,	to top:4,	price:1, pos:4
-	stack A:32117,	index:24,	to top:5,	price:1, pos:5
-	stack A:33194,	index:25,	to top:6,	price:1, pos:6
-	stack A:36431,	index:27,	to top:7,	price:1, pos:7
-	stack A:39428,	index:28,	to top:8,	price:2, pos:8
-	stack A:27403,	index:20,	to top:-7,	price:1, pos:9
-	stack A:24990,	index:17,	to top:-6,	price:1, pos:10
-	stack A:21932,	index:14,	to top:-5,	price:1, pos:11
-	stack A:22408,	index:15,	to top:-4,	price:1, pos:12
-	stack A:22874,	index:16,	to top:-3,	price:1, pos:13
-	stack A:26922,	index:19,	to top:-2,	price:1, pos:14
-	stack A:28151,	index:21,	to top:-1,	price:1, pos:15
-
-B:
-	stack B:11411,	index:8,	to top:1,	price:2, pos:1
-	stack B:16890,	index:12,	to top:2,	price:3, pos:2
-	stack B:2841,	index:2,	to top:3,	price:4, pos:3
-	stack B:8020,	index:5,	to top:4,	price:5, pos:4
-	stack B:3797,	index:3,	to top:5,	price:6, pos:5
-	stack B:10968,	index:7,	to top:6,	price:7, pos:6
-	stack B:10013,	index:6,	to top:7,	price:8, pos:7
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:8
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:9
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:10
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:11
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:12
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:13
-
-
-	before move
-A:
-	stack A:14221,	index:9,	to top:0,	price:1, pos:0
-	stack A:14631,	index:10,	to top:1,	price:1, pos:1
-	stack A:30542,	index:22,	to top:2,	price:1, pos:2
-	stack A:39463,	index:29,	to top:3,	price:2, pos:3
-	stack A:36194,	index:26,	to top:4,	price:2, pos:4
-	stack A:31034,	index:23,	to top:5,	price:1, pos:5
-	stack A:32117,	index:24,	to top:6,	price:1, pos:6
-	stack A:33194,	index:25,	to top:7,	price:1, pos:7
-	stack A:36431,	index:27,	to top:8,	price:1, pos:8
-	stack A:39428,	index:28,	to top:-8,	price:2, pos:9
-	stack A:27403,	index:20,	to top:-7,	price:1, pos:10
-	stack A:24990,	index:17,	to top:-6,	price:1, pos:11
-	stack A:21932,	index:14,	to top:-5,	price:1, pos:12
-	stack A:22408,	index:15,	to top:-4,	price:1, pos:13
-	stack A:22874,	index:16,	to top:-3,	price:1, pos:14
-	stack A:26922,	index:19,	to top:-2,	price:1, pos:15
-	stack A:28151,	index:21,	to top:-1,	price:1, pos:16
-
-B:
-	stack B:11411,	index:8,	to top:0,	price:2, pos:0
-	stack B:16890,	index:12,	to top:1,	price:3, pos:1
-	stack B:2841,	index:2,	to top:2,	price:4, pos:2
-	stack B:8020,	index:5,	to top:3,	price:5, pos:3
-	stack B:3797,	index:3,	to top:4,	price:6, pos:4
-	stack B:10968,	index:7,	to top:5,	price:7, pos:5
-	stack B:10013,	index:6,	to top:6,	price:8, pos:6
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:7
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:8
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:9
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:10
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:11
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:12
-
-
-	after move
-A:
-	stack A:11411,	index:8,	to top:0,	price:1, pos:0
-	stack A:14221,	index:9,	to top:0,	price:1, pos:0
-	stack A:14631,	index:10,	to top:1,	price:1, pos:1
-	stack A:30542,	index:22,	to top:2,	price:1, pos:2
-	stack A:39463,	index:29,	to top:3,	price:2, pos:3
-	stack A:36194,	index:26,	to top:4,	price:2, pos:4
-	stack A:31034,	index:23,	to top:5,	price:1, pos:5
-	stack A:32117,	index:24,	to top:6,	price:1, pos:6
-	stack A:33194,	index:25,	to top:7,	price:1, pos:7
-	stack A:36431,	index:27,	to top:8,	price:1, pos:8
-	stack A:39428,	index:28,	to top:-8,	price:2, pos:9
-	stack A:27403,	index:20,	to top:-7,	price:1, pos:10
-	stack A:24990,	index:17,	to top:-6,	price:1, pos:11
-	stack A:21932,	index:14,	to top:-5,	price:1, pos:12
-	stack A:22408,	index:15,	to top:-4,	price:1, pos:13
-	stack A:22874,	index:16,	to top:-3,	price:1, pos:14
-	stack A:26922,	index:19,	to top:-2,	price:1, pos:15
-	stack A:28151,	index:21,	to top:-1,	price:1, pos:16
-
-B:
-	stack B:16890,	index:12,	to top:1,	price:3, pos:1
-	stack B:2841,	index:2,	to top:2,	price:3, pos:2
-	stack B:8020,	index:5,	to top:3,	price:4, pos:3
-	stack B:3797,	index:3,	to top:4,	price:5, pos:4
-	stack B:10968,	index:7,	to top:5,	price:6, pos:5
-	stack B:10013,	index:6,	to top:6,	price:7, pos:6
-	stack B:-358,	index:1,	to top:-6,	price:7, pos:7
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:8
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:9
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:10
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:11
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:12
-
-
-	before move
-A:
-	stack A:11411,	index:8,	to top:0,	price:1, pos:0
-	stack A:14221,	index:9,	to top:1,	price:1, pos:1
-	stack A:14631,	index:10,	to top:2,	price:1, pos:2
-	stack A:30542,	index:22,	to top:3,	price:1, pos:3
-	stack A:39463,	index:29,	to top:4,	price:2, pos:4
-	stack A:36194,	index:26,	to top:5,	price:2, pos:5
-	stack A:31034,	index:23,	to top:6,	price:1, pos:6
-	stack A:32117,	index:24,	to top:7,	price:1, pos:7
-	stack A:33194,	index:25,	to top:8,	price:1, pos:8
-	stack A:36431,	index:27,	to top:9,	price:1, pos:9
-	stack A:39428,	index:28,	to top:-8,	price:2, pos:10
-	stack A:27403,	index:20,	to top:-7,	price:1, pos:11
-	stack A:24990,	index:17,	to top:-6,	price:1, pos:12
-	stack A:21932,	index:14,	to top:-5,	price:1, pos:13
-	stack A:22408,	index:15,	to top:-4,	price:1, pos:14
-	stack A:22874,	index:16,	to top:-3,	price:1, pos:15
-	stack A:26922,	index:19,	to top:-2,	price:1, pos:16
-	stack A:28151,	index:21,	to top:-1,	price:1, pos:17
-
-B:
-	stack B:16890,	index:12,	to top:0,	price:3, pos:0
-	stack B:2841,	index:2,	to top:1,	price:3, pos:1
-	stack B:8020,	index:5,	to top:2,	price:4, pos:2
-	stack B:3797,	index:3,	to top:3,	price:5, pos:3
-	stack B:10968,	index:7,	to top:4,	price:6, pos:4
-	stack B:10013,	index:6,	to top:5,	price:7, pos:5
-	stack B:-358,	index:1,	to top:6,	price:7, pos:6
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:7
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:8
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:9
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:10
-	stack B:25635,	index:18,	to top:-1,	price:2, pos:11
-
-
-	after move
-A:
-	stack A:25635,	index:18,	to top:-1,	price:2, pos:11
-	stack A:30542,	index:22,	to top:3,	price:1, pos:3
-	stack A:39463,	index:29,	to top:4,	price:2, pos:4
-	stack A:36194,	index:26,	to top:5,	price:2, pos:5
-	stack A:31034,	index:23,	to top:6,	price:1, pos:6
-	stack A:32117,	index:24,	to top:7,	price:1, pos:7
-	stack A:33194,	index:25,	to top:8,	price:1, pos:8
-	stack A:36431,	index:27,	to top:9,	price:1, pos:9
-	stack A:39428,	index:28,	to top:-8,	price:2, pos:10
-	stack A:27403,	index:20,	to top:-7,	price:1, pos:11
-	stack A:24990,	index:17,	to top:-6,	price:1, pos:12
-	stack A:21932,	index:14,	to top:-5,	price:1, pos:13
-	stack A:22408,	index:15,	to top:-4,	price:1, pos:14
-	stack A:22874,	index:16,	to top:-3,	price:1, pos:15
-	stack A:26922,	index:19,	to top:-2,	price:1, pos:16
-	stack A:28151,	index:21,	to top:-1,	price:1, pos:17
-	stack A:11411,	index:8,	to top:0,	price:1, pos:0
-	stack A:14221,	index:9,	to top:1,	price:1, pos:1
-	stack A:14631,	index:10,	to top:2,	price:1, pos:2
-
-B:
-	stack B:16890,	index:12,	to top:0,	price:2, pos:0
-	stack B:2841,	index:2,	to top:1,	price:2, pos:1
-	stack B:8020,	index:5,	to top:2,	price:3, pos:2
-	stack B:3797,	index:3,	to top:3,	price:4, pos:3
-	stack B:10968,	index:7,	to top:4,	price:5, pos:4
-	stack B:10013,	index:6,	to top:5,	price:6, pos:5
-	stack B:-358,	index:1,	to top:6,	price:7, pos:6
-	stack B:5175,	index:4,	to top:-5,	price:6, pos:7
-	stack B:-909,	index:0,	to top:-4,	price:5, pos:8
-	stack B:14927,	index:11,	to top:-3,	price:4, pos:9
-	stack B:17125,	index:13,	to top:-2,	price:3, pos:10
-
-
-	before move
-A:
-	stack A:25635,	index:18,	to top:0,	price:2, pos:0
-	stack A:30542,	index:22,	to top:1,	price:1, pos:1
-	stack A:39463,	index:29,	to top:2,	price:2, pos:2
-	stack A:36194,	index:26,	to top:3,	price:2, pos:3
-	stack A:31034,	index:23,	to top:4,	price:1, pos:4
-	stack A:32117,	index:24,	to top:5,	price:1, pos:5
-	stack A:33194,	index:25,	to top:6,	price:1, pos:6
-	stack A:36431,	index:27,	to top:7,	price:1, pos:7
-	stack A:39428,	index:28,	to top:8,	price:2, pos:8
-	stack A:27403,	index:20,	to top:9,	price:1, pos:9
-	stack A:24990,	index:17,	to top:-9,	price:1, pos:10
-	stack A:21932,	index:14,	to top:-8,	price:1, pos:11
-	stack A:22408,	index:15,	to top:-7,	price:1, pos:12
-	stack A:22874,	index:16,	to top:-6,	price:1, pos:13
-	stack A:26922,	index:19,	to top:-5,	price:1, pos:14
-	stack A:28151,	index:21,	to top:-4,	price:1, pos:15
-	stack A:11411,	index:8,	to top:-3,	price:1, pos:16
-	stack A:14221,	index:9,	to top:-2,	price:1, pos:17
-	stack A:14631,	index:10,	to top:-1,	price:1, pos:18
-
-B:
-	stack B:16890,	index:12,	to top:0,	price:2, pos:0
-	stack B:2841,	index:2,	to top:1,	price:2, pos:1
-	stack B:8020,	index:5,	to top:2,	price:3, pos:2
-	stack B:3797,	index:3,	to top:3,	price:4, pos:3
-	stack B:10968,	index:7,	to top:4,	price:5, pos:4
-	stack B:10013,	index:6,	to top:5,	price:6, pos:5
-	stack B:-358,	index:1,	to top:-5,	price:7, pos:6
-	stack B:5175,	index:4,	to top:-4,	price:6, pos:7
-	stack B:-909,	index:0,	to top:-3,	price:5, pos:8
-	stack B:14927,	index:11,	to top:-2,	price:4, pos:9
-	stack B:17125,	index:13,	to top:-1,	price:3, pos:10
-
-
-	after move
-A:
-	stack A:16890,	index:12,	to top:0,	price:1, pos:0
-	stack A:25635,	index:18,	to top:0,	price:1, pos:0
-	stack A:30542,	index:22,	to top:1,	price:1, pos:1
-	stack A:39463,	index:29,	to top:2,	price:2, pos:2
-	stack A:36194,	index:26,	to top:3,	price:2, pos:3
-	stack A:31034,	index:23,	to top:4,	price:1, pos:4
-	stack A:32117,	index:24,	to top:5,	price:1, pos:5
-	stack A:33194,	index:25,	to top:6,	price:1, pos:6
-	stack A:36431,	index:27,	to top:7,	price:1, pos:7
-	stack A:39428,	index:28,	to top:8,	price:2, pos:8
-	stack A:27403,	index:20,	to top:9,	price:1, pos:9
-	stack A:24990,	index:17,	to top:-9,	price:1, pos:10
-	stack A:21932,	index:14,	to top:-8,	price:1, pos:11
-	stack A:22408,	index:15,	to top:-7,	price:1, pos:12
-	stack A:22874,	index:16,	to top:-6,	price:1, pos:13
-	stack A:26922,	index:19,	to top:-5,	price:1, pos:14
-	stack A:28151,	index:21,	to top:-4,	price:1, pos:15
-	stack A:11411,	index:8,	to top:-3,	price:1, pos:16
-	stack A:14221,	index:9,	to top:-2,	price:1, pos:17
-	stack A:14631,	index:10,	to top:-1,	price:1, pos:18
-
-B:
-	stack B:2841,	index:2,	to top:1,	price:2, pos:1
-	stack B:8020,	index:5,	to top:2,	price:3, pos:2
-	stack B:3797,	index:3,	to top:3,	price:4, pos:3
-	stack B:10968,	index:7,	to top:4,	price:5, pos:4
-	stack B:10013,	index:6,	to top:5,	price:6, pos:5
-	stack B:-358,	index:1,	to top:-5,	price:6, pos:6
-	stack B:5175,	index:4,	to top:-4,	price:5, pos:7
-	stack B:-909,	index:0,	to top:-3,	price:4, pos:8
-	stack B:14927,	index:11,	to top:-2,	price:2, pos:9
-	stack B:17125,	index:13,	to top:-1,	price:2, pos:10
-
-
-	before move
-A:
-	stack A:16890,	index:12,	to top:0,	price:1, pos:0
-	stack A:25635,	index:18,	to top:1,	price:1, pos:1
-	stack A:30542,	index:22,	to top:2,	price:1, pos:2
-	stack A:39463,	index:29,	to top:3,	price:2, pos:3
-	stack A:36194,	index:26,	to top:4,	price:2, pos:4
-	stack A:31034,	index:23,	to top:5,	price:1, pos:5
-	stack A:32117,	index:24,	to top:6,	price:1, pos:6
-	stack A:33194,	index:25,	to top:7,	price:1, pos:7
-	stack A:36431,	index:27,	to top:8,	price:1, pos:8
-	stack A:39428,	index:28,	to top:9,	price:2, pos:9
-	stack A:27403,	index:20,	to top:10,	price:1, pos:10
-	stack A:24990,	index:17,	to top:-9,	price:1, pos:11
-	stack A:21932,	index:14,	to top:-8,	price:1, pos:12
-	stack A:22408,	index:15,	to top:-7,	price:1, pos:13
-	stack A:22874,	index:16,	to top:-6,	price:1, pos:14
-	stack A:26922,	index:19,	to top:-5,	price:1, pos:15
-	stack A:28151,	index:21,	to top:-4,	price:1, pos:16
-	stack A:11411,	index:8,	to top:-3,	price:1, pos:17
-	stack A:14221,	index:9,	to top:-2,	price:1, pos:18
-	stack A:14631,	index:10,	to top:-1,	price:1, pos:19
-
-B:
-	stack B:2841,	index:2,	to top:0,	price:2, pos:0
-	stack B:8020,	index:5,	to top:1,	price:3, pos:1
-	stack B:3797,	index:3,	to top:2,	price:4, pos:2
-	stack B:10968,	index:7,	to top:3,	price:5, pos:3
-	stack B:10013,	index:6,	to top:4,	price:6, pos:4
-	stack B:-358,	index:1,	to top:5,	price:6, pos:5
-	stack B:5175,	index:4,	to top:-4,	price:5, pos:6
-	stack B:-909,	index:0,	to top:-3,	price:4, pos:7
-	stack B:14927,	index:11,	to top:-2,	price:2, pos:8
-	stack B:17125,	index:13,	to top:-1,	price:2, pos:9
-
-
-	after move
-A:
-	stack A:2841,	index:2,	to top:0,	price:1, pos:0
-	stack A:16890,	index:12,	to top:0,	price:1, pos:0
-	stack A:25635,	index:18,	to top:1,	price:1, pos:1
-	stack A:30542,	index:22,	to top:2,	price:1, pos:2
-	stack A:39463,	index:29,	to top:3,	price:2, pos:3
-	stack A:36194,	index:26,	to top:4,	price:2, pos:4
-	stack A:31034,	index:23,	to top:5,	price:1, pos:5
-	stack A:32117,	index:24,	to top:6,	price:1, pos:6
-	stack A:33194,	index:25,	to top:7,	price:1, pos:7
-	stack A:36431,	index:27,	to top:8,	price:1, pos:8
-	stack A:39428,	index:28,	to top:9,	price:2, pos:9
-	stack A:27403,	index:20,	to top:10,	price:1, pos:10
-	stack A:24990,	index:17,	to top:-9,	price:1, pos:11
-	stack A:21932,	index:14,	to top:-8,	price:1, pos:12
-	stack A:22408,	index:15,	to top:-7,	price:1, pos:13
-	stack A:22874,	index:16,	to top:-6,	price:1, pos:14
-	stack A:26922,	index:19,	to top:-5,	price:1, pos:15
-	stack A:28151,	index:21,	to top:-4,	price:1, pos:16
-	stack A:11411,	index:8,	to top:-3,	price:1, pos:17
-	stack A:14221,	index:9,	to top:-2,	price:1, pos:18
-	stack A:14631,	index:10,	to top:-1,	price:1, pos:19
-
-B:
-	stack B:8020,	index:5,	to top:1,	price:2, pos:1
-	stack B:3797,	index:3,	to top:2,	price:3, pos:2
-	stack B:10968,	index:7,	to top:3,	price:4, pos:3
-	stack B:10013,	index:6,	to top:4,	price:5, pos:4
-	stack B:-358,	index:1,	to top:5,	price:6, pos:5
-	stack B:5175,	index:4,	to top:-4,	price:5, pos:6
-	stack B:-909,	index:0,	to top:-3,	price:4, pos:7
-	stack B:14927,	index:11,	to top:-2,	price:2, pos:8
-	stack B:17125,	index:13,	to top:-1,	price:2, pos:9
-
-
-	before move
-A:
-	stack A:2841,	index:2,	to top:0,	price:1, pos:0
-	stack A:16890,	index:12,	to top:1,	price:1, pos:1
-	stack A:25635,	index:18,	to top:2,	price:1, pos:2
-	stack A:30542,	index:22,	to top:3,	price:1, pos:3
-	stack A:39463,	index:29,	to top:4,	price:2, pos:4
-	stack A:36194,	index:26,	to top:5,	price:2, pos:5
-	stack A:31034,	index:23,	to top:6,	price:1, pos:6
-	stack A:32117,	index:24,	to top:7,	price:1, pos:7
-	stack A:33194,	index:25,	to top:8,	price:1, pos:8
-	stack A:36431,	index:27,	to top:9,	price:1, pos:9
-	stack A:39428,	index:28,	to top:10,	price:2, pos:10
-	stack A:27403,	index:20,	to top:-10,	price:1, pos:11
-	stack A:24990,	index:17,	to top:-9,	price:1, pos:12
-	stack A:21932,	index:14,	to top:-8,	price:1, pos:13
-	stack A:22408,	index:15,	to top:-7,	price:1, pos:14
-	stack A:22874,	index:16,	to top:-6,	price:1, pos:15
-	stack A:26922,	index:19,	to top:-5,	price:1, pos:16
-	stack A:28151,	index:21,	to top:-4,	price:1, pos:17
-	stack A:11411,	index:8,	to top:-3,	price:1, pos:18
-	stack A:14221,	index:9,	to top:-2,	price:1, pos:19
-	stack A:14631,	index:10,	to top:-1,	price:1, pos:20
-
-B:
-	stack B:8020,	index:5,	to top:0,	price:2, pos:0
-	stack B:3797,	index:3,	to top:1,	price:3, pos:1
-	stack B:10968,	index:7,	to top:2,	price:4, pos:2
-	stack B:10013,	index:6,	to top:3,	price:5, pos:3
-	stack B:-358,	index:1,	to top:4,	price:6, pos:4
-	stack B:5175,	index:4,	to top:-4,	price:5, pos:5
-	stack B:-909,	index:0,	to top:-3,	price:4, pos:6
-	stack B:14927,	index:11,	to top:-2,	price:2, pos:7
-	stack B:17125,	index:13,	to top:-1,	price:2, pos:8
-
-
-	after move
-A:
-	stack A:17125,	index:13,	to top:-1,	price:2, pos:8
-	stack A:25635,	index:18,	to top:2,	price:1, pos:2
-	stack A:30542,	index:22,	to top:3,	price:1, pos:3
-	stack A:39463,	index:29,	to top:4,	price:2, pos:4
-	stack A:36194,	index:26,	to top:5,	price:2, pos:5
-	stack A:31034,	index:23,	to top:6,	price:1, pos:6
-	stack A:32117,	index:24,	to top:7,	price:1, pos:7
-	stack A:33194,	index:25,	to top:8,	price:1, pos:8
-	stack A:36431,	index:27,	to top:9,	price:1, pos:9
-	stack A:39428,	index:28,	to top:10,	price:2, pos:10
-	stack A:27403,	index:20,	to top:-10,	price:1, pos:11
-	stack A:24990,	index:17,	to top:-9,	price:1, pos:12
-	stack A:21932,	index:14,	to top:-8,	price:1, pos:13
-	stack A:22408,	index:15,	to top:-7,	price:1, pos:14
-	stack A:22874,	index:16,	to top:-6,	price:1, pos:15
-	stack A:26922,	index:19,	to top:-5,	price:1, pos:16
-	stack A:28151,	index:21,	to top:-4,	price:1, pos:17
-	stack A:11411,	index:8,	to top:-3,	price:1, pos:18
-	stack A:14221,	index:9,	to top:-2,	price:1, pos:19
-	stack A:14631,	index:10,	to top:-1,	price:1, pos:20
-	stack A:2841,	index:2,	to top:0,	price:1, pos:0
-	stack A:16890,	index:12,	to top:1,	price:1, pos:1
-
-B:
-	stack B:8020,	index:5,	to top:0,	price:2, pos:0
-	stack B:3797,	index:3,	to top:1,	price:3, pos:1
-	stack B:10968,	index:7,	to top:2,	price:3, pos:2
-	stack B:10013,	index:6,	to top:3,	price:4, pos:3
-	stack B:-358,	index:1,	to top:4,	price:5, pos:4
-	stack B:5175,	index:4,	to top:-4,	price:5, pos:5
-	stack B:-909,	index:0,	to top:-3,	price:4, pos:6
-	stack B:14927,	index:11,	to top:-2,	price:2, pos:7
-
-
-	before move
-A:
-	stack A:17125,	index:13,	to top:0,	price:2, pos:0
-	stack A:25635,	index:18,	to top:1,	price:1, pos:1
-	stack A:30542,	index:22,	to top:2,	price:1, pos:2
-	stack A:39463,	index:29,	to top:3,	price:2, pos:3
-	stack A:36194,	index:26,	to top:4,	price:2, pos:4
-	stack A:31034,	index:23,	to top:5,	price:1, pos:5
-	stack A:32117,	index:24,	to top:6,	price:1, pos:6
-	stack A:33194,	index:25,	to top:7,	price:1, pos:7
-	stack A:36431,	index:27,	to top:8,	price:1, pos:8
-	stack A:39428,	index:28,	to top:9,	price:2, pos:9
-	stack A:27403,	index:20,	to top:10,	price:1, pos:10
-	stack A:24990,	index:17,	to top:11,	price:1, pos:11
-	stack A:21932,	index:14,	to top:-10,	price:1, pos:12
-	stack A:22408,	index:15,	to top:-9,	price:1, pos:13
-	stack A:22874,	index:16,	to top:-8,	price:1, pos:14
-	stack A:26922,	index:19,	to top:-7,	price:1, pos:15
-	stack A:28151,	index:21,	to top:-6,	price:1, pos:16
-	stack A:11411,	index:8,	to top:-5,	price:1, pos:17
-	stack A:14221,	index:9,	to top:-4,	price:1, pos:18
-	stack A:14631,	index:10,	to top:-3,	price:1, pos:19
-	stack A:2841,	index:2,	to top:-2,	price:1, pos:20
-	stack A:16890,	index:12,	to top:-1,	price:1, pos:21
-
-B:
-	stack B:8020,	index:5,	to top:0,	price:2, pos:0
-	stack B:3797,	index:3,	to top:1,	price:3, pos:1
-	stack B:10968,	index:7,	to top:2,	price:3, pos:2
-	stack B:10013,	index:6,	to top:3,	price:4, pos:3
-	stack B:-358,	index:1,	to top:4,	price:5, pos:4
-	stack B:5175,	index:4,	to top:-3,	price:5, pos:5
-	stack B:-909,	index:0,	to top:-2,	price:4, pos:6
-	stack B:14927,	index:11,	to top:-1,	price:2, pos:7
-
-
-	after move
-A:
-	stack A:8020,	index:5,	to top:0,	price:1, pos:0
-	stack A:16890,	index:12,	to top:-1,	price:1, pos:21
-	stack A:17125,	index:13,	to top:0,	price:1, pos:0
-	stack A:25635,	index:18,	to top:1,	price:1, pos:1
-	stack A:30542,	index:22,	to top:2,	price:1, pos:2
-	stack A:39463,	index:29,	to top:3,	price:2, pos:3
-	stack A:36194,	index:26,	to top:4,	price:2, pos:4
-	stack A:31034,	index:23,	to top:5,	price:1, pos:5
-	stack A:32117,	index:24,	to top:6,	price:1, pos:6
-	stack A:33194,	index:25,	to top:7,	price:1, pos:7
-	stack A:36431,	index:27,	to top:8,	price:1, pos:8
-	stack A:39428,	index:28,	to top:9,	price:2, pos:9
-	stack A:27403,	index:20,	to top:10,	price:1, pos:10
-	stack A:24990,	index:17,	to top:11,	price:1, pos:11
-	stack A:21932,	index:14,	to top:-10,	price:1, pos:12
-	stack A:22408,	index:15,	to top:-9,	price:1, pos:13
-	stack A:22874,	index:16,	to top:-8,	price:1, pos:14
-	stack A:26922,	index:19,	to top:-7,	price:1, pos:15
-	stack A:28151,	index:21,	to top:-6,	price:1, pos:16
-	stack A:11411,	index:8,	to top:-5,	price:1, pos:17
-	stack A:14221,	index:9,	to top:-4,	price:1, pos:18
-	stack A:14631,	index:10,	to top:-3,	price:1, pos:19
-	stack A:2841,	index:2,	to top:-2,	price:1, pos:20
-
-B:
-	stack B:3797,	index:3,	to top:1,	price:2, pos:1
-	stack B:10968,	index:7,	to top:2,	price:3, pos:2
-	stack B:10013,	index:6,	to top:3,	price:4, pos:3
-	stack B:-358,	index:1,	to top:4,	price:5, pos:4
-	stack B:5175,	index:4,	to top:-3,	price:3, pos:5
-	stack B:-909,	index:0,	to top:-2,	price:3, pos:6
-	stack B:14927,	index:11,	to top:-1,	price:2, pos:7
-
-
-	before move
-A:
-	stack A:8020,	index:5,	to top:0,	price:1, pos:0
-	stack A:16890,	index:12,	to top:1,	price:1, pos:1
-	stack A:17125,	index:13,	to top:2,	price:1, pos:2
-	stack A:25635,	index:18,	to top:3,	price:1, pos:3
-	stack A:30542,	index:22,	to top:4,	price:1, pos:4
-	stack A:39463,	index:29,	to top:5,	price:2, pos:5
-	stack A:36194,	index:26,	to top:6,	price:2, pos:6
-	stack A:31034,	index:23,	to top:7,	price:1, pos:7
-	stack A:32117,	index:24,	to top:8,	price:1, pos:8
-	stack A:33194,	index:25,	to top:9,	price:1, pos:9
-	stack A:36431,	index:27,	to top:10,	price:1, pos:10
-	stack A:39428,	index:28,	to top:11,	price:2, pos:11
-	stack A:27403,	index:20,	to top:-11,	price:1, pos:12
-	stack A:24990,	index:17,	to top:-10,	price:1, pos:13
-	stack A:21932,	index:14,	to top:-9,	price:1, pos:14
-	stack A:22408,	index:15,	to top:-8,	price:1, pos:15
-	stack A:22874,	index:16,	to top:-7,	price:1, pos:16
-	stack A:26922,	index:19,	to top:-6,	price:1, pos:17
-	stack A:28151,	index:21,	to top:-5,	price:1, pos:18
-	stack A:11411,	index:8,	to top:-4,	price:1, pos:19
-	stack A:14221,	index:9,	to top:-3,	price:1, pos:20
-	stack A:14631,	index:10,	to top:-2,	price:1, pos:21
-	stack A:2841,	index:2,	to top:-1,	price:1, pos:22
-
-B:
-	stack B:3797,	index:3,	to top:0,	price:2, pos:0
-	stack B:10968,	index:7,	to top:1,	price:3, pos:1
-	stack B:10013,	index:6,	to top:2,	price:4, pos:2
-	stack B:-358,	index:1,	to top:3,	price:5, pos:3
-	stack B:5175,	index:4,	to top:-3,	price:3, pos:4
-	stack B:-909,	index:0,	to top:-2,	price:3, pos:5
-	stack B:14927,	index:11,	to top:-1,	price:2, pos:6
-
-
-	after move
-A:
-	stack A:3797,	index:3,	to top:0,	price:1, pos:0
-	stack A:8020,	index:5,	to top:0,	price:1, pos:0
-	stack A:16890,	index:12,	to top:1,	price:1, pos:1
-	stack A:17125,	index:13,	to top:2,	price:1, pos:2
-	stack A:25635,	index:18,	to top:3,	price:1, pos:3
-	stack A:30542,	index:22,	to top:4,	price:1, pos:4
-	stack A:39463,	index:29,	to top:5,	price:2, pos:5
-	stack A:36194,	index:26,	to top:6,	price:2, pos:6
-	stack A:31034,	index:23,	to top:7,	price:1, pos:7
-	stack A:32117,	index:24,	to top:8,	price:1, pos:8
-	stack A:33194,	index:25,	to top:9,	price:1, pos:9
-	stack A:36431,	index:27,	to top:10,	price:1, pos:10
-	stack A:39428,	index:28,	to top:11,	price:2, pos:11
-	stack A:27403,	index:20,	to top:-11,	price:1, pos:12
-	stack A:24990,	index:17,	to top:-10,	price:1, pos:13
-	stack A:21932,	index:14,	to top:-9,	price:1, pos:14
-	stack A:22408,	index:15,	to top:-8,	price:1, pos:15
-	stack A:22874,	index:16,	to top:-7,	price:1, pos:16
-	stack A:26922,	index:19,	to top:-6,	price:1, pos:17
-	stack A:28151,	index:21,	to top:-5,	price:1, pos:18
-	stack A:11411,	index:8,	to top:-4,	price:1, pos:19
-	stack A:14221,	index:9,	to top:-3,	price:1, pos:20
-	stack A:14631,	index:10,	to top:-2,	price:1, pos:21
-	stack A:2841,	index:2,	to top:-1,	price:1, pos:22
-
-B:
-	stack B:10968,	index:7,	to top:1,	price:2, pos:1
-	stack B:10013,	index:6,	to top:2,	price:3, pos:2
-	stack B:-358,	index:1,	to top:3,	price:4, pos:3
-	stack B:5175,	index:4,	to top:-3,	price:3, pos:4
-	stack B:-909,	index:0,	to top:-2,	price:3, pos:5
-	stack B:14927,	index:11,	to top:-1,	price:2, pos:6
-
-
-	before move
-A:
-	stack A:3797,	index:3,	to top:0,	price:1, pos:0
-	stack A:8020,	index:5,	to top:1,	price:1, pos:1
-	stack A:16890,	index:12,	to top:2,	price:1, pos:2
-	stack A:17125,	index:13,	to top:3,	price:1, pos:3
-	stack A:25635,	index:18,	to top:4,	price:1, pos:4
-	stack A:30542,	index:22,	to top:5,	price:1, pos:5
-	stack A:39463,	index:29,	to top:6,	price:2, pos:6
-	stack A:36194,	index:26,	to top:7,	price:2, pos:7
-	stack A:31034,	index:23,	to top:8,	price:1, pos:8
-	stack A:32117,	index:24,	to top:9,	price:1, pos:9
-	stack A:33194,	index:25,	to top:10,	price:1, pos:10
-	stack A:36431,	index:27,	to top:11,	price:1, pos:11
-	stack A:39428,	index:28,	to top:12,	price:2, pos:12
-	stack A:27403,	index:20,	to top:-11,	price:1, pos:13
-	stack A:24990,	index:17,	to top:-10,	price:1, pos:14
-	stack A:21932,	index:14,	to top:-9,	price:1, pos:15
-	stack A:22408,	index:15,	to top:-8,	price:1, pos:16
-	stack A:22874,	index:16,	to top:-7,	price:1, pos:17
-	stack A:26922,	index:19,	to top:-6,	price:1, pos:18
-	stack A:28151,	index:21,	to top:-5,	price:1, pos:19
-	stack A:11411,	index:8,	to top:-4,	price:1, pos:20
-	stack A:14221,	index:9,	to top:-3,	price:1, pos:21
-	stack A:14631,	index:10,	to top:-2,	price:1, pos:22
-	stack A:2841,	index:2,	to top:-1,	price:1, pos:23
-
-B:
-	stack B:10968,	index:7,	to top:0,	price:2, pos:0
-	stack B:10013,	index:6,	to top:1,	price:3, pos:1
-	stack B:-358,	index:1,	to top:2,	price:4, pos:2
-	stack B:5175,	index:4,	to top:3,	price:3, pos:3
-	stack B:-909,	index:0,	to top:-2,	price:3, pos:4
-	stack B:14927,	index:11,	to top:-1,	price:2, pos:5
-
-
-	after move
-A:
-	stack A:10968,	index:7,	to top:0,	price:1, pos:0
-	stack A:16890,	index:12,	to top:2,	price:1, pos:2
-	stack A:17125,	index:13,	to top:3,	price:1, pos:3
-	stack A:25635,	index:18,	to top:4,	price:1, pos:4
-	stack A:30542,	index:22,	to top:5,	price:1, pos:5
-	stack A:39463,	index:29,	to top:6,	price:2, pos:6
-	stack A:36194,	index:26,	to top:7,	price:2, pos:7
-	stack A:31034,	index:23,	to top:8,	price:1, pos:8
-	stack A:32117,	index:24,	to top:9,	price:1, pos:9
-	stack A:33194,	index:25,	to top:10,	price:1, pos:10
-	stack A:36431,	index:27,	to top:11,	price:1, pos:11
-	stack A:39428,	index:28,	to top:12,	price:2, pos:12
-	stack A:27403,	index:20,	to top:-11,	price:1, pos:13
-	stack A:24990,	index:17,	to top:-10,	price:1, pos:14
-	stack A:21932,	index:14,	to top:-9,	price:1, pos:15
-	stack A:22408,	index:15,	to top:-8,	price:1, pos:16
-	stack A:22874,	index:16,	to top:-7,	price:1, pos:17
-	stack A:26922,	index:19,	to top:-6,	price:1, pos:18
-	stack A:28151,	index:21,	to top:-5,	price:1, pos:19
-	stack A:11411,	index:8,	to top:-4,	price:1, pos:20
-	stack A:14221,	index:9,	to top:-3,	price:1, pos:21
-	stack A:14631,	index:10,	to top:-2,	price:1, pos:22
-	stack A:2841,	index:2,	to top:-1,	price:1, pos:23
-	stack A:3797,	index:3,	to top:0,	price:1, pos:0
-	stack A:8020,	index:5,	to top:1,	price:1, pos:1
-
-B:
-	stack B:10013,	index:6,	to top:1,	price:2, pos:1
-	stack B:-358,	index:1,	to top:2,	price:3, pos:2
-	stack B:5175,	index:4,	to top:3,	price:3, pos:3
-	stack B:-909,	index:0,	to top:-2,	price:3, pos:4
-	stack B:14927,	index:11,	to top:-1,	price:2, pos:5
-
-
-	before move
-A:
-	stack A:10968,	index:7,	to top:0,	price:1, pos:0
-	stack A:16890,	index:12,	to top:1,	price:1, pos:1
-	stack A:17125,	index:13,	to top:2,	price:1, pos:2
-	stack A:25635,	index:18,	to top:3,	price:1, pos:3
-	stack A:30542,	index:22,	to top:4,	price:1, pos:4
-	stack A:39463,	index:29,	to top:5,	price:2, pos:5
-	stack A:36194,	index:26,	to top:6,	price:2, pos:6
-	stack A:31034,	index:23,	to top:7,	price:1, pos:7
-	stack A:32117,	index:24,	to top:8,	price:1, pos:8
-	stack A:33194,	index:25,	to top:9,	price:1, pos:9
-	stack A:36431,	index:27,	to top:10,	price:1, pos:10
-	stack A:39428,	index:28,	to top:11,	price:2, pos:11
-	stack A:27403,	index:20,	to top:12,	price:1, pos:12
-	stack A:24990,	index:17,	to top:-12,	price:1, pos:13
-	stack A:21932,	index:14,	to top:-11,	price:1, pos:14
-	stack A:22408,	index:15,	to top:-10,	price:1, pos:15
-	stack A:22874,	index:16,	to top:-9,	price:1, pos:16
-	stack A:26922,	index:19,	to top:-8,	price:1, pos:17
-	stack A:28151,	index:21,	to top:-7,	price:1, pos:18
-	stack A:11411,	index:8,	to top:-6,	price:1, pos:19
-	stack A:14221,	index:9,	to top:-5,	price:1, pos:20
-	stack A:14631,	index:10,	to top:-4,	price:1, pos:21
-	stack A:2841,	index:2,	to top:-3,	price:1, pos:22
-	stack A:3797,	index:3,	to top:-2,	price:1, pos:23
-	stack A:8020,	index:5,	to top:-1,	price:1, pos:24
-
-B:
-	stack B:10013,	index:6,	to top:0,	price:2, pos:0
-	stack B:-358,	index:1,	to top:1,	price:3, pos:1
-	stack B:5175,	index:4,	to top:2,	price:3, pos:2
-	stack B:-909,	index:0,	to top:-2,	price:3, pos:3
-	stack B:14927,	index:11,	to top:-1,	price:2, pos:4
-
-
-	after move
-A:
-	stack A:10013,	index:6,	to top:0,	price:1, pos:0
-	stack A:10968,	index:7,	to top:0,	price:1, pos:0
-	stack A:16890,	index:12,	to top:1,	price:1, pos:1
-	stack A:17125,	index:13,	to top:2,	price:1, pos:2
-	stack A:25635,	index:18,	to top:3,	price:1, pos:3
-	stack A:30542,	index:22,	to top:4,	price:1, pos:4
-	stack A:39463,	index:29,	to top:5,	price:2, pos:5
-	stack A:36194,	index:26,	to top:6,	price:2, pos:6
-	stack A:31034,	index:23,	to top:7,	price:1, pos:7
-	stack A:32117,	index:24,	to top:8,	price:1, pos:8
-	stack A:33194,	index:25,	to top:9,	price:1, pos:9
-	stack A:36431,	index:27,	to top:10,	price:1, pos:10
-	stack A:39428,	index:28,	to top:11,	price:2, pos:11
-	stack A:27403,	index:20,	to top:12,	price:1, pos:12
-	stack A:24990,	index:17,	to top:-12,	price:1, pos:13
-	stack A:21932,	index:14,	to top:-11,	price:1, pos:14
-	stack A:22408,	index:15,	to top:-10,	price:1, pos:15
-	stack A:22874,	index:16,	to top:-9,	price:1, pos:16
-	stack A:26922,	index:19,	to top:-8,	price:1, pos:17
-	stack A:28151,	index:21,	to top:-7,	price:1, pos:18
-	stack A:11411,	index:8,	to top:-6,	price:1, pos:19
-	stack A:14221,	index:9,	to top:-5,	price:1, pos:20
-	stack A:14631,	index:10,	to top:-4,	price:1, pos:21
-	stack A:2841,	index:2,	to top:-3,	price:1, pos:22
-	stack A:3797,	index:3,	to top:-2,	price:1, pos:23
-	stack A:8020,	index:5,	to top:-1,	price:1, pos:24
-
-B:
-	stack B:-358,	index:1,	to top:1,	price:2, pos:1
-	stack B:5175,	index:4,	to top:2,	price:3, pos:2
-	stack B:-909,	index:0,	to top:-2,	price:3, pos:3
-	stack B:14927,	index:11,	to top:-1,	price:2, pos:4
-
-
-	before move
-A:
-	stack A:10013,	index:6,	to top:0,	price:1, pos:0
-	stack A:10968,	index:7,	to top:1,	price:1, pos:1
-	stack A:16890,	index:12,	to top:2,	price:1, pos:2
-	stack A:17125,	index:13,	to top:3,	price:1, pos:3
-	stack A:25635,	index:18,	to top:4,	price:1, pos:4
-	stack A:30542,	index:22,	to top:5,	price:1, pos:5
-	stack A:39463,	index:29,	to top:6,	price:2, pos:6
-	stack A:36194,	index:26,	to top:7,	price:2, pos:7
-	stack A:31034,	index:23,	to top:8,	price:1, pos:8
-	stack A:32117,	index:24,	to top:9,	price:1, pos:9
-	stack A:33194,	index:25,	to top:10,	price:1, pos:10
-	stack A:36431,	index:27,	to top:11,	price:1, pos:11
-	stack A:39428,	index:28,	to top:12,	price:2, pos:12
-	stack A:27403,	index:20,	to top:13,	price:1, pos:13
-	stack A:24990,	index:17,	to top:-12,	price:1, pos:14
-	stack A:21932,	index:14,	to top:-11,	price:1, pos:15
-	stack A:22408,	index:15,	to top:-10,	price:1, pos:16
-	stack A:22874,	index:16,	to top:-9,	price:1, pos:17
-	stack A:26922,	index:19,	to top:-8,	price:1, pos:18
-	stack A:28151,	index:21,	to top:-7,	price:1, pos:19
-	stack A:11411,	index:8,	to top:-6,	price:1, pos:20
-	stack A:14221,	index:9,	to top:-5,	price:1, pos:21
-	stack A:14631,	index:10,	to top:-4,	price:1, pos:22
-	stack A:2841,	index:2,	to top:-3,	price:1, pos:23
-	stack A:3797,	index:3,	to top:-2,	price:1, pos:24
-	stack A:8020,	index:5,	to top:-1,	price:1, pos:25
-
-B:
-	stack B:-358,	index:1,	to top:0,	price:2, pos:0
-	stack B:5175,	index:4,	to top:1,	price:3, pos:1
-	stack B:-909,	index:0,	to top:2,	price:3, pos:2
-	stack B:14927,	index:11,	to top:-1,	price:2, pos:3
-
-
-	after move
-A:
-	stack A:-358,	index:1,	to top:0,	price:1, pos:0
-	stack A:2841,	index:2,	to top:-3,	price:1, pos:23
-	stack A:3797,	index:3,	to top:-2,	price:1, pos:24
-	stack A:8020,	index:5,	to top:-1,	price:1, pos:25
-	stack A:10013,	index:6,	to top:0,	price:1, pos:0
-	stack A:10968,	index:7,	to top:1,	price:1, pos:1
-	stack A:16890,	index:12,	to top:2,	price:1, pos:2
-	stack A:17125,	index:13,	to top:3,	price:1, pos:3
-	stack A:25635,	index:18,	to top:4,	price:1, pos:4
-	stack A:30542,	index:22,	to top:5,	price:1, pos:5
-	stack A:39463,	index:29,	to top:6,	price:2, pos:6
-	stack A:36194,	index:26,	to top:7,	price:2, pos:7
-	stack A:31034,	index:23,	to top:8,	price:1, pos:8
-	stack A:32117,	index:24,	to top:9,	price:1, pos:9
-	stack A:33194,	index:25,	to top:10,	price:1, pos:10
-	stack A:36431,	index:27,	to top:11,	price:1, pos:11
-	stack A:39428,	index:28,	to top:12,	price:2, pos:12
-	stack A:27403,	index:20,	to top:13,	price:1, pos:13
-	stack A:24990,	index:17,	to top:-12,	price:1, pos:14
-	stack A:21932,	index:14,	to top:-11,	price:1, pos:15
-	stack A:22408,	index:15,	to top:-10,	price:1, pos:16
-	stack A:22874,	index:16,	to top:-9,	price:1, pos:17
-	stack A:26922,	index:19,	to top:-8,	price:1, pos:18
-	stack A:28151,	index:21,	to top:-7,	price:1, pos:19
-	stack A:11411,	index:8,	to top:-6,	price:1, pos:20
-	stack A:14221,	index:9,	to top:-5,	price:1, pos:21
-	stack A:14631,	index:10,	to top:-4,	price:1, pos:22
-
-B:
-	stack B:5175,	index:4,	to top:1,	price:2, pos:1
-	stack B:-909,	index:0,	to top:2,	price:3, pos:2
-	stack B:14927,	index:11,	to top:-1,	price:2, pos:3
-
-
-	before move
-A:
-	stack A:-358,	index:1,	to top:0,	price:1, pos:0
-	stack A:2841,	index:2,	to top:1,	price:1, pos:1
-	stack A:3797,	index:3,	to top:2,	price:1, pos:2
-	stack A:8020,	index:5,	to top:3,	price:1, pos:3
-	stack A:10013,	index:6,	to top:4,	price:1, pos:4
-	stack A:10968,	index:7,	to top:5,	price:1, pos:5
-	stack A:16890,	index:12,	to top:6,	price:1, pos:6
-	stack A:17125,	index:13,	to top:7,	price:1, pos:7
-	stack A:25635,	index:18,	to top:8,	price:1, pos:8
-	stack A:30542,	index:22,	to top:9,	price:1, pos:9
-	stack A:39463,	index:29,	to top:10,	price:2, pos:10
-	stack A:36194,	index:26,	to top:11,	price:2, pos:11
-	stack A:31034,	index:23,	to top:12,	price:1, pos:12
-	stack A:32117,	index:24,	to top:13,	price:1, pos:13
-	stack A:33194,	index:25,	to top:-13,	price:1, pos:14
-	stack A:36431,	index:27,	to top:-12,	price:1, pos:15
-	stack A:39428,	index:28,	to top:-11,	price:2, pos:16
-	stack A:27403,	index:20,	to top:-10,	price:1, pos:17
-	stack A:24990,	index:17,	to top:-9,	price:1, pos:18
-	stack A:21932,	index:14,	to top:-8,	price:1, pos:19
-	stack A:22408,	index:15,	to top:-7,	price:1, pos:20
-	stack A:22874,	index:16,	to top:-6,	price:1, pos:21
-	stack A:26922,	index:19,	to top:-5,	price:1, pos:22
-	stack A:28151,	index:21,	to top:-4,	price:1, pos:23
-	stack A:11411,	index:8,	to top:-3,	price:1, pos:24
-	stack A:14221,	index:9,	to top:-2,	price:1, pos:25
-	stack A:14631,	index:10,	to top:-1,	price:1, pos:26
-
-B:
-	stack B:5175,	index:4,	to top:0,	price:2, pos:0
-	stack B:-909,	index:0,	to top:1,	price:3, pos:1
-	stack B:14927,	index:11,	to top:-1,	price:2, pos:2
-
-
-	after move
-A:
-	stack A:14927,	index:11,	to top:-1,	price:2, pos:2
-	stack A:16890,	index:12,	to top:6,	price:1, pos:6
-	stack A:17125,	index:13,	to top:7,	price:1, pos:7
-	stack A:25635,	index:18,	to top:8,	price:1, pos:8
-	stack A:30542,	index:22,	to top:9,	price:1, pos:9
-	stack A:39463,	index:29,	to top:10,	price:2, pos:10
-	stack A:36194,	index:26,	to top:11,	price:2, pos:11
-	stack A:31034,	index:23,	to top:12,	price:1, pos:12
-	stack A:32117,	index:24,	to top:13,	price:1, pos:13
-	stack A:33194,	index:25,	to top:-13,	price:1, pos:14
-	stack A:36431,	index:27,	to top:-12,	price:1, pos:15
-	stack A:39428,	index:28,	to top:-11,	price:2, pos:16
-	stack A:27403,	index:20,	to top:-10,	price:1, pos:17
-	stack A:24990,	index:17,	to top:-9,	price:1, pos:18
-	stack A:21932,	index:14,	to top:-8,	price:1, pos:19
-	stack A:22408,	index:15,	to top:-7,	price:1, pos:20
-	stack A:22874,	index:16,	to top:-6,	price:1, pos:21
-	stack A:26922,	index:19,	to top:-5,	price:1, pos:22
-	stack A:28151,	index:21,	to top:-4,	price:1, pos:23
-	stack A:11411,	index:8,	to top:-3,	price:1, pos:24
-	stack A:14221,	index:9,	to top:-2,	price:1, pos:25
-	stack A:14631,	index:10,	to top:-1,	price:1, pos:26
-	stack A:-358,	index:1,	to top:0,	price:1, pos:0
-	stack A:2841,	index:2,	to top:1,	price:1, pos:1
-	stack A:3797,	index:3,	to top:2,	price:1, pos:2
-	stack A:8020,	index:5,	to top:3,	price:1, pos:3
-	stack A:10013,	index:6,	to top:4,	price:1, pos:4
-	stack A:10968,	index:7,	to top:5,	price:1, pos:5
-
-B:
-	stack B:5175,	index:4,	to top:0,	price:2, pos:0
-	stack B:-909,	index:0,	to top:1,	price:2, pos:1
+	stack B:22589,	index:8,	to top:0,	price:2, pos:0, target_pos:2
+	stack B:14539,	index:4,	to top:1,	price:1, pos:1, target_pos:0
+	stack B:3646,	index:0,	to top:2,	price:2, pos:2, target_pos:0
+	stack B:12142,	index:2,	to top:3,	price:3, pos:3, target_pos:0
+	stack B:6966,	index:1,	to top:4,	price:4, pos:4, target_pos:0
+	stack B:12354,	index:3,	to top:-3,	price:3, pos:5, target_pos:0
+	stack B:14576,	index:5,	to top:-2,	price:2, pos:6, target_pos:0
+	stack B:31736,	index:12,	to top:-1,	price:6, pos:7, target_pos:5
 
 
