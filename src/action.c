@@ -6,12 +6,11 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 12:31:44 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/16 11:56:17 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/19 15:40:19 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-// #include "../inc/push_swap.h"
 
 void	a_ction4(char *command, t_node **stack_a, t_node **stack_b)
 {
@@ -73,7 +72,6 @@ void	a_ction2(char *command, t_node **stack_a, t_node **stack_b)
 
 void	action(char *command, t_node **stack_a, t_node **stack_b)
 {
-	// printf("COMMAND RECIVED: %s\n", command);
 	if (ft_strcmp(command, "sa") == 0)
 	{
 		swap(stack_a);
@@ -93,4 +91,3 @@ void	action(char *command, t_node **stack_a, t_node **stack_b)
 	else
 		a_ction2(command, stack_a, stack_b);
 }
-

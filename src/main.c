@@ -6,12 +6,11 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:34:51 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/19 00:29:42 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/22 21:18:16 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-// #include "inc/push_swap.h"
 
 char	**parser(int argc, char **argv)
 {
@@ -30,7 +29,6 @@ char	**parser(int argc, char **argv)
 		i = 0;
 		while (i < argc - 1)
 		{
-			// printf("len argv:%lu\n", strlen(argv[i + 1]));
 			list[i] = ft_strdup_ps(argv[i + 1], ft_strlen(argv[i + 1]));
 			i++;
 		}
@@ -39,51 +37,73 @@ char	**parser(int argc, char **argv)
 	return (list);
 }
 
-int	main(int argc, char *argv[])
+void	solve_small(t_node **stack_a)
 {
-	t_node	*stack_a;
-	t_node	*stack_b;
-	char	**list;
+	t_node	*tmp;
 
-	if (argc < 2 || !argv[1][0])
-		return(ft_printf("Error\n"), 0);
+	tmp = *stack_a;
+	if (is_sorted(tmp) || stack_len(tmp) == 1)
+		return ;
+	if (stack_len(tmp) == 3)
+		sort3(stack_a);
 	else
-	{
-		if (!(list = parser(argc, argv)))
-			return (1);
-	}
+		action("sa", stack_a, NULL);
+}
 
-	if (!(stack_a = stack_init(check_list(list))))
-		return(printf("Error\n"), 0);
+void	solve_big(t_node **stack_a)
+{
+	t_node	*stack_b;
+
+	if (is_sorted(*stack_a))
+		return ;
 	stack_b = NULL;
-	assign_index(&stack_a, stack_len(stack_a));
-	push_up_three(&stack_a, &stack_b, stack_len(stack_a), 0);
-
-	sort3(&stack_a);
-	printer(NULL, NULL, 0);
-	// printer(stack_a, stack_b, "start");
+	push_up_three(stack_a, &stack_b, stack_len(*stack_a), 0);
+	sort3(stack_a);
 	while (stack_b)
 	{
 		calc_position(&stack_b);
-		calc_position(&stack_a);
-		get_target_position(&stack_a, &stack_b);
-		get_price(&stack_a, &stack_b);
-		printer(stack_a, stack_b, "before move");
-		// make_move(&stack_a, &stack_b);
-		check_make_move(&stack_a, &stack_b);
-		printer(stack_a, stack_b, "after move");
+		calc_position(stack_a);
+		get_target_position(stack_a, &stack_b);
+		get_price(stack_a, &stack_b);
+		check_make_move(stack_a, &stack_b);
 	}
+	final_turn(stack_a);
+	if (stack_b != NULL)
+		free_stack(stack_b);
+}
 
-	// int sa = 0;
-	// int sb = 0;
-	// printf("index to use first:a%d, b%d\n", find_index_w_lowest_price(stack_a, &sa), find_index_w_lowest_price(stack_b, &sb));
-	// printf("sa:%d, sb:%d\n", sa, sb);
-	// printf("position of next move:%d\n", get_next_move(stack_a, stack_b));
+void	push_swap(char **list)
+{
+	t_node	*stack_a;
 
-	// free_list(list);
-	// if (stack_a != NULL)
-	// 	free_stack(stack_a);
-	// if (stack_b != NULL)
-	// 	free_stack(stack_b);
+	stack_a = stack_init(check_list(list));
+	if (!stack_a)
+	{
+		printf("Error\n");
+		exit (EXIT_FAILURE);
+	}
+	free_list(list);
+	assign_index(&stack_a, stack_len(stack_a));
+	if (stack_len(stack_a) <= 3)
+		solve_small(&stack_a);
+	else
+		solve_big(&stack_a);
+	if (stack_a != NULL)
+		free_stack(stack_a);
+}
+
+int	main(int argc, char *argv[])
+{
+	char	**list;
+
+	if (argc == 2 && !argv[1][0])
+		return (0);
+	else
+	{
+		list = parser(argc, argv);
+		if (!list)
+			return (1);
+	}
+	push_swap(list);
 	return (0);
 }

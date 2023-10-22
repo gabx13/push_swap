@@ -6,13 +6,11 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 17:22:12 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/16 11:56:27 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/19 15:40:55 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-// #include "../inc/push_swap.h"
-
 
 int	ft_abs(int nb)
 {

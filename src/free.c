@@ -1,42 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   position.c                                         :+:      :+:    :+:   */
+/*   free.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/15 19:34:33 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/22 20:37:08 by vgabovs          ###   ########.fr       */
+/*   Created: 2023/10/22 19:54:33 by vgabovs           #+#    #+#             */
+/*   Updated: 2023/10/22 19:55:28 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	write_data(t_node **tmp, int *i, int *j)
-{
-	(*tmp)->to_top = ++(*i);
-	(*tmp)->pos = (*j)++;
-	(*tmp) = (*tmp)->next;
-}
-
-void	calc_position(t_node **stack)
+void	free_stack(t_node *stack)
 {
 	t_node	*tmp;
-	int		i;
-	int		j;
-	int		len;
 
-	if (!(stack))
+	while (stack->next != NULL)
+	{
+		tmp = stack->next;
+		free(stack);
+		stack = tmp;
+	}
+	free(stack);
+	stack = NULL;
+}
+
+void	free_list(char **list)
+{
+	int	i;
+
+	if (list == NULL)
 		return ;
-	i = -1;
-	j = 0;
-	tmp = *stack;
-	len = stack_len(tmp);
-	while (i < (len) / 2)
-		write_data(&tmp, &i, &j);
-	if (len % 2 != 0)
+	i = 0;
+	while (list[i] != NULL)
+	{
+		free(list[i]);
+		list[i] = NULL;
 		i++;
-	i *= -1;
-	while (tmp)
-		write_data(&tmp, &i, &j);
+	}
+	free(list);
+	list = NULL;
 }

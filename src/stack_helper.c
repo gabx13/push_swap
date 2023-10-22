@@ -6,7 +6,7 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:52:54 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/18 12:59:07 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/22 19:54:44 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,24 +20,20 @@ int	is_sorted(t_node *stack)
 	while (head->next != NULL)
 	{
 		if (head->data > head->next->data)
-		{
-			// printf("| NOT sorted |\n");
 			return (0);
-		}
 		head = head->next;
 	}
-	// printf("| sorted |\n");
 	return (1);
 }
 
 int	max_index(t_node *stack)
 {
 	t_node	*tmp;
-	int	max_index;
+	int		max_index;
 
 	tmp = stack;
 	max_index = INT_MIN;
-	while(tmp)
+	while (tmp)
 	{
 		if (tmp->index > max_index)
 			max_index = tmp->index;
@@ -55,7 +51,7 @@ int	stack_len(t_node *stack)
 		return (0);
 	i = 0;
 	head = stack;
-	while (head!= NULL)
+	while (head != NULL)
 	{
 		head = head->next;
 		++i;
@@ -92,18 +88,4 @@ int	last_node_idx(t_node *stack)
 	while (tmp->next != NULL)
 		tmp = tmp->next;
 	return (tmp->index);
-}
-
-void	free_stack(t_node *stack)
-{
-	t_node	*tmp;
-
-	while (stack->next != NULL)
-	{
-		tmp = stack->next;
-		free(stack);
-		stack = tmp;
-	}
-	free(stack);
-	stack = NULL;
 }

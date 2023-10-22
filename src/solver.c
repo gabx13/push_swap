@@ -6,12 +6,11 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 23:15:42 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/18 12:54:33 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/22 20:29:16 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-// #include "../inc/push_swap.h"
 
 void	sort3(t_node **stack)
 {
@@ -23,7 +22,6 @@ void	sort3(t_node **stack)
 	min = 0;
 	max = 0;
 	min_max(head, &min, &max);
-	// printf("MIN-MAX: %i-%i, stack len:%i\n", min, max, stack_len(*stack));
 	if (is_sorted(*stack))
 		return ;
 	if ((*stack)->data == max)
@@ -34,20 +32,35 @@ void	sort3(t_node **stack)
 		action("sa", stack, NULL);
 }
 
-void	sort5(t_node **stack_a, t_node **stack_b)
+void	final_sort(t_node **stack_a, int i)
 {
-	if (is_sorted(*stack_a))
-		exit (EXIT_SUCCESS);
-	while (stack_len(*stack_a) > 3)
+	int		len;
+
+	len = stack_len(*stack_a);
+	if (i < len / 2)
 	{
-		// printf("action\n");
-		action("pb",stack_a, stack_b);
+		while (!is_sorted(*stack_a))
+			action("ra", stack_a, NULL);
 	}
-	sort3(stack_a);
-	printf("stack b\n");
-	sort3(stack_b);
-	// print_stack(*stack_a);
-	printf("stack b\n");
-	// print_stack(*stack_b);
+	else
+	{
+		while (!is_sorted(*stack_a))
+			action("rra", stack_a, NULL);
+	}
 }
 
+void	final_turn(t_node **stack_a)
+{
+	int		i;
+	t_node	*tmp;
+
+	tmp = *stack_a;
+	i = 0;
+	while (tmp)
+	{
+		if (tmp->index == 0)
+			final_sort(stack_a, i);
+		i++;
+		tmp = tmp->next;
+	}
+}
