@@ -6,7 +6,7 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:36:31 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/22 21:40:29 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/22 22:04:05 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,10 @@ void		action(char *command, t_node **stack_a, t_node **stack_b);
 void		a_ction2(char *command, t_node **stack_a, t_node **stack_b);
 void		a_ction3(char *command, t_node **stack_a, t_node **stack_b);
 void		a_ction4(char *command, t_node **stack_a, t_node **stack_b);
-void		rrr_move(t_node **stack_a, t_node **stack_b, int *cost_a, int *cost_b);
-void		rr_move(t_node **stack_a, t_node **stack_b, int *cost_a, int *cost_b);
+void		rrr_move(t_node **stack_a, t_node **stack_b,
+				int *cost_a, int *cost_b);
+void		rr_move(t_node **stack_a, t_node **stack_b,
+				int *cost_a, int *cost_b);
 void		rotate_a(t_node **stack, int *cost);
 void		rotate_b(t_node **stack, int *cost);
 
@@ -60,7 +62,8 @@ int			*check_list(char **list);
 
 int			find_ato_top(t_node *stack, int target_pos);
 void		get_price(t_node **stack_a, t_node **stack_b);
-void		make_move(t_node **stack_a, t_node **stack_b, int cost_a, int cost_b);
+void		make_move(t_node **stack_a, t_node **stack_b,
+				int cost_a, int cost_b);
 void		check_make_move(t_node **stack_a, t_node **stack_b);
 
 void		write_data(t_node **tmp, int *i, int *j);
@@ -68,7 +71,7 @@ void		calc_position(t_node **stack);
 
 void		rotate_to_push(t_node **stack_a, t_node **stack_b);
 void		push_up_three(t_node **stack_a, t_node **stack_b,
-						int ssize, int trigger);
+				int ssize, int trigger);
 
 void		swap(t_node **stack);
 void		rotate(t_node **stack);
@@ -91,8 +94,8 @@ void		add_node_front(t_node **stack, t_node *node);
 t_node		*stack_init(int *list);
 void		assign_index(t_node **stack_a, int stack_size);
 
-int			get_target(t_node **stack_a, int b_idx, int target_idx, int target_pos);
+int			get_target(t_node **stack_a, int b_idx,
+				int target_idx, int target_pos);
 void		get_target_position(t_node **stack_a, t_node **stack_b);
-
 
 #endif
