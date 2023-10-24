@@ -6,7 +6,7 @@
 #    By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/15 19:52:07 by vgabovs           #+#    #+#              #
-#    Updated: 2023/10/04 21:17:25 by vgabovs          ###   ########.fr        #
+#    Updated: 2023/10/23 17:51:20 by vgabovs          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,8 @@ SRC = ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c \
 
 BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
 	ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c \
-	ft_lstiter_bonus.c ft_lstmap_bonus.c
+	ft_lstiter_bonus.c ft_lstmap_bonus.c get_next_line_bonus.c \
+	get_next_line_utils_bonus.c
 
 CFLAGS = -Wall -Wextra -Werror
 

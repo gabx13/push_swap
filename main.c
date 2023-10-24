@@ -6,36 +6,11 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:34:51 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/22 21:18:16 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/25 01:05:05 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-char	**parser(int argc, char **argv)
-{
-	char	**list;
-	int		i;
-
-	if (argc == 2)
-	{
-		list = ft_split(argv[1], ' ');
-	}
-	else
-	{
-		list = (char **)malloc((argc + 1) * sizeof(char *));
-		if (list == NULL)
-			return (NULL);
-		i = 0;
-		while (i < argc - 1)
-		{
-			list[i] = ft_strdup_ps(argv[i + 1], ft_strlen(argv[i + 1]));
-			i++;
-		}
-		list[i] = NULL;
-	}
-	return (list);
-}
 
 void	solve_small(t_node **stack_a)
 {
@@ -96,7 +71,7 @@ int	main(int argc, char *argv[])
 {
 	char	**list;
 
-	if (argc == 2 && !argv[1][0])
+	if (argc == 1 || (argc == 2 && !argv[1][0]))
 		return (0);
 	else
 	{

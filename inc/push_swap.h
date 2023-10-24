@@ -6,7 +6,7 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:36:31 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/22 22:04:05 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/25 00:29:35 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,5 +97,14 @@ void		assign_index(t_node **stack_a, int stack_size);
 int			get_target(t_node **stack_a, int b_idx,
 				int target_idx, int target_pos);
 void		get_target_position(t_node **stack_a, t_node **stack_b);
+
+void		c_action(char *command, t_node **stack_a, t_node **stack_b);
+void		ca_ction2(char *command, t_node **stack_a, t_node **stack_b);
+void		ca_ction3(char *command, t_node **stack_a, t_node **stack_b);
+void		ca_ction4(char *command, t_node **stack_a, t_node **stack_b);
+void		checker(char **list);
+void		next_line(t_node **stack_a, t_node **stack_b);
+char		*check_command(char *line);
+void		safe_stack_free(t_node **stack);
 
 #endif

@@ -6,21 +6,29 @@
 #    By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/03 17:28:00 by vgabovs           #+#    #+#              #
-#    Updated: 2023/10/22 21:41:47 by vgabovs          ###   ########.fr        #
+#    Updated: 2023/10/25 00:37:08 by vgabovs          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
 
+BONUS = checker
+
 SRCS = $(wildcard main.c src/*.c)
+
+OBJS = $(SRCS:%.c=$(OBJ_DIR)/%.o)
 
 SRC_DIR = src
 
 OBJ_DIR = obj
 
-INC_DIR = inc
+SRC_BONUS = $(wildcard bonus/*.c src/*.c)
 
-OBJS = $(SRCS:%.c=$(OBJ_DIR)/%.o)
+SRC_BONUS_DIR = bonus
+
+BONUS_OBJ = $(SRC_BONUS:%.c=$(OBJ_DIR)/%.o)
+
+INC_DIR = inc
 
 CC = cc
 
@@ -70,6 +78,13 @@ $(OBJ_DIR)/%.o:%.c $(PUSH_SWAP_INC) $(LIBFTA)
 $(LIBFTA):
 	@make all -C $(LIBFTDIR)
 
+$(BONUS): $(LIBFTA) $(SRCS) $(SRC_BONUS) $(BONUS_OBJ)
+	@$(CCFLAGS) $(BONUS_OBJ) $(LIBFTA) -o $@
+	@echo $(GREEN)"- Bonus Compiled -"$(NONE)
+
+bonus: USE_SANITIZER = 0
+bonus: $(BONUS)
+
 val: USE_SANITIZER = 0
 val: fclean $(LIBFTA) $(SRCS) $(OBJS)
 	@$(CC) $(OBJS) $(LIBFTA) -o $(NAME)
@@ -93,14 +108,14 @@ clean:
 	@echo $(CURSIVE)$(GRAY) "     - Object files removed" $(NONE)
 
 fclean: clean
-	@rm -f $(NAME)
+	@rm -f $(NAME) $(BONUS)
 	@make -C $(LIBFTDIR) fclean
-	@echo $(CURSIVE)$(GRAY) "     - $(NAME) removed" $(NONE)
+	@echo $(CURSIVE)$(GRAY) "     - $(NAME) & $(BONUS) removed" $(NONE)
 
 re: fclean all
 
 test: $(NAME)
-	$(eval ARG = $(shell jot -r 10 -2147483648 2147483647))
+	$(eval ARG = $(shell jot -r 100 -2147483648 2147483647))
 	@./push_swap $(ARG)
 	@echo $(WARNING)"Iteration count: "$(NONE)
 	@./push_swap $(ARG) | wc -l
@@ -135,4 +150,4 @@ test500: $(NAME)
 	@echo $(WARNING)"Iteration count: "
 	@./push_swap $(ARG) | wc -l
 
-.PHONY: all val at re h clean fclean test test3 test5 test100 test500
+.PHONY: all bonus val at re h clean fclean test test3 test5 test100 test500

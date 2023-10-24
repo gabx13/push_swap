@@ -6,7 +6,7 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/01 23:03:58 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/09 21:44:37 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/24 12:25:14 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,13 @@
 # include <unistd.h>
 # include <string.h>
 # include <stdio.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 10
+# endif
+
+# include <stdio.h>
+# include <fcntl.h>
 
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
@@ -68,5 +75,15 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+char	*get_next_line(int fd);
+void	free_safe(char **str);
+size_t	ft_strlen(const char *s);
+char	*ft_strcpy(char *dst, char const *src);
+char	*ft_strjoin(char const *s1, char const *s2);
+int		check_newline(char *line);
+char	*reset_line(char *line);
+char	*return_fnc(char *line);
+char	*check_line(char *line, int fd);
 
 #endif

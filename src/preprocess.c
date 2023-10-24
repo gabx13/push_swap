@@ -6,11 +6,36 @@
 /*   By: vgabovs <vgabovs@student.42wolfsburg.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 17:36:35 by vgabovs           #+#    #+#             */
-/*   Updated: 2023/10/20 21:28:25 by vgabovs          ###   ########.fr       */
+/*   Updated: 2023/10/24 12:21:42 by vgabovs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+char	**parser(int argc, char **argv)
+{
+	char	**list;
+	int		i;
+
+	if (argc == 2)
+	{
+		list = ft_split(argv[1], ' ');
+	}
+	else
+	{
+		list = (char **)malloc((argc + 1) * sizeof(char *));
+		if (list == NULL)
+			return (NULL);
+		i = 0;
+		while (i < argc - 1)
+		{
+			list[i] = ft_strdup_ps(argv[i + 1], ft_strlen(argv[i + 1]));
+			i++;
+		}
+		list[i] = NULL;
+	}
+	return (list);
+}
 
 void	rotate_to_push(t_node **stack_a, t_node **stack_b)
 {
