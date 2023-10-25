@@ -108,7 +108,7 @@ char	*get_next_line(int fd)
 	static char	*line[2048];
 	char		*return_line;
 
-	if (fd < 0 || BUFFER_SIZE < 1 | fd > 2047)
+	if (fd < 0 || BUFFER_SIZE < 1 || fd > 2047)
 		return (NULL);
 	if (!line[fd])
 	{
